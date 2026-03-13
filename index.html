@@ -60,6 +60,8 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
 .chart-title { font-size: 13px; font-weight: 600; color: #374151; margin-bottom: 10px; }
 .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.chart-wrap { position: relative; height: 300px; }
+.chart-wrap-sm { position: relative; height: 260px; }
 
 /* Tabs */
 .tabs { display: flex; background: #f3f4f6; border-radius: 8px; padding: 3px; gap: 2px; margin-bottom: 12px; }
@@ -144,7 +146,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
     <button class="tab" onclick="showTrend('installs')">📥 Installs</button>
   </div>
   <div class="chart-card">
-    <canvas id="trendChart" height="100"></canvas>
+    <div class="chart-wrap"><canvas id="trendChart"></canvas></div>
   </div>
   <div class="note">⚠️ Install data = all Avada apps (GA4 cannot filter by app). Joy-specific installs require BigQuery access.</div>
 </div>
@@ -162,7 +164,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   <div class="chart-row">
     <div class="chart-card">
       <div class="chart-title" id="breakdown-chart-title">Sessions by Source/Medium</div>
-      <canvas id="breakdownChart" height="140"></canvas>
+      <div class="chart-wrap"><canvas id="breakdownChart"></canvas></div>
     </div>
     <div class="chart-card" style="max-height:400px;overflow-y:auto">
       <div class="chart-title">Data Table</div>
@@ -180,11 +182,11 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   <div class="chart-row">
     <div class="chart-card">
       <div class="chart-title">Daily Sessions by Top Sources</div>
-      <canvas id="sourceTrendChart" height="120"></canvas>
+      <div class="chart-wrap"><canvas id="sourceTrendChart"></canvas></div>
     </div>
     <div class="chart-card">
       <div class="chart-title">Daily Sessions by Top Countries</div>
-      <canvas id="countryTrendChart" height="120"></canvas>
+      <div class="chart-wrap"><canvas id="countryTrendChart"></canvas></div>
     </div>
   </div>
 </div>
@@ -195,11 +197,11 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   <div class="chart-row">
     <div class="chart-card">
       <div class="chart-title">Installs by First User Source</div>
-      <canvas id="installSourceChart" height="140"></canvas>
+      <div class="chart-wrap-sm"><canvas id="installSourceChart"></canvas></div>
     </div>
     <div class="chart-card">
       <div class="chart-title">Installs by Country</div>
-      <canvas id="installCountryChart" height="140"></canvas>
+      <div class="chart-wrap-sm"><canvas id="installCountryChart"></canvas></div>
     </div>
   </div>
 </div>
