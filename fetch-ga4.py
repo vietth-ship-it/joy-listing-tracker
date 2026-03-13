@@ -44,6 +44,17 @@ def joy_page_filter():
     )
 
 
+def joy_install_filter():
+    """Filter installs where landingPage = /joyio (Joy-specific installs)."""
+    return FilterExpression(filter=Filter(
+        field_name="landingPage",
+        string_filter=Filter.StringFilter(
+            value="/joyio",
+            match_type=Filter.StringFilter.MatchType.EXACT,
+        ),
+    ))
+
+
 def query(client, start, end, dimensions, metrics, dim_filter=None, limit=10000):
     req = RunReportRequest(
         property=GA4_PROPERTY,
@@ -84,7 +95,9 @@ def main():
     prev_start = (today - timedelta(days=DAYS_BACK * 2)).strftime("%Y-%m-%d")
 
     jf = joy_page_filter()
+    jif = joy_install_filter()
     traffic_metrics = ["sessions", "totalUsers", "newUsers"]
+    install_metrics = ["keyEvents:shopify_app_install"]
 
     print(f"Fetching GA4 data (Joy only): {start} to {end}...")
 
@@ -97,7 +110,8 @@ def main():
             "prev_period": {"start": prev_start, "end": prev_end},
             "generated_at": datetime.now().isoformat(),
             "notes": {
-                "traffic": "Filtered to apps.shopify.com/joyio only"
+                "traffic": "Filtered to hostName=apps.shopify.com AND pagePath=/joyio",
+                "installs": "Filtered by landingPage=/joyio — covers installs from listing page visitors only"
             }
         },
 
@@ -122,15 +136,27 @@ def main():
             ["date", "sessionSourceMedium"], ["sessions"], jf, 5000),
         "traffic_daily_by_country": query(client, start, end,
             ["date", "country"], ["sessions"], jf, 5000),
+
+        # === INSTALLS (filtered by landingPage=/joyio) ===
+        "installs_daily": query(client, start, end,
+            ["date"], install_metrics, jif),
+        "installs_daily_prev": query(client, prev_start, prev_end,
+            ["date"], install_metrics, jif),
+        "installs_by_source": query(client, start, end,
+            ["firstUserSourceMedium"], install_metrics, jif),
+        "installs_by_country": query(client, start, end,
+            ["country"], install_metrics, jif),
     }
 
     with open(OUTPUT_FILE, "w") as f:
         json.dump(data, f, indent=2)
 
     t_sessions = sum(r["sessions"] for r in data["traffic_daily"])
+    t_installs = sum(r["keyEvents:shopify_app_install"] for r in data["installs_daily"])
     print(f"Done! {OUTPUT_FILE} ({os.path.getsize(OUTPUT_FILE)/1024:.0f} KB)")
     print(f"  Period: {start} → {end}")
     print(f"  Joy listing sessions: {t_sessions:,}")
+    print(f"  Joy installs (from listing): {t_installs:,}")
 
 
 if __name__ == "__main__":
