@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joy Loyalty — Listing Tracker</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f5f6fa; --card: #ffffff; --border: #e5e7eb;
+  --text: #111827; --muted: #6b7280; --light: #9ca3af;
+  --primary: #6366f1; --primary-light: rgba(99,102,241,0.1);
+  --green: #16a34a; --red: #dc2626; --amber: #d97706;
+  --cyan: #06b6d4; --purple: #8b5cf6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+
+/* Auth overlay */
+#auth-overlay {
+  position: fixed; inset: 0; background: var(--bg); z-index: 1000;
+  display: flex; align-items: center; justify-content: center;
+}
+#auth-overlay.hidden { display: none; }
+.auth-box { text-align: center; max-width: 380px; }
+.auth-icon { width: 56px; height: 56px; background: linear-gradient(135deg, var(--primary), var(--purple));
+  border-radius: 14px; display: flex; align-items: center; justify-content: center;
+  font-size: 26px; margin: 0 auto 20px; }
+.auth-title { font-size: 22px; font-weight: 700; margin-bottom: 6px; }
+.auth-sub { color: var(--light); font-size: 13px; margin-bottom: 32px; }
+#g_id_onload, .g_id_signin { display: inline-block; }
+.auth-note { color: #d1d5db; font-size: 11px; margin-top: 28px; }
+
+/* Header */
+.header { padding: 20px 32px 12px; }
+.header h1 { font-size: 22px; font-weight: 700; }
+.header p { font-size: 13px; color: var(--light); margin-top: 3px; }
+.header .app-badge { color: var(--primary); font-weight: 600; }
+
+/* KPI row */
+.kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px; padding: 0 32px 16px; }
+.kpi-card { background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 18px 20px; }
+.kpi-label { font-size: 11px; font-weight: 600; color: var(--light);
+  text-transform: uppercase; letter-spacing: 0.7px; margin-bottom: 6px; }
+.kpi-value { font-size: 26px; font-weight: 700; line-height: 1.1; }
+.kpi-sub { font-size: 12px; margin-top: 5px; }
+.kpi-up { color: var(--green); } .kpi-down { color: var(--red); } .kpi-neutral { color: var(--amber); }
+
+/* Section */
+.section { padding: 8px 32px; }
+.section-title { font-size: 14px; font-weight: 600; color: #374151;
+  margin: 20px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+
+/* Chart card */
+.chart-card { background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.chart-title { font-size: 13px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* Tabs */
+.tabs { display: flex; background: #f3f4f6; border-radius: 8px; padding: 3px; gap: 2px; margin-bottom: 12px; }
+.tab { padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 500;
+  color: var(--muted); cursor: pointer; border: none; background: none; }
+.tab.active { background: var(--card); color: var(--text); box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+
+/* Table */
+.data-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.data-table th { text-align: left; font-weight: 600; color: var(--light);
+  text-transform: uppercase; letter-spacing: 0.5px; font-size: 10px;
+  padding: 8px 12px; border-bottom: 1px solid var(--border); }
+.data-table td { padding: 8px 12px; border-bottom: 1px solid #f3f4f6; color: #374151; }
+.data-table tr:hover { background: #fafbfc; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Footer */
+.footer { text-align: center; padding: 24px; color: #d1d5db; font-size: 11px; }
+.note { color: var(--amber); font-size: 11px; padding: 8px 12px;
+  background: #fffbeb; border-radius: 8px; margin-bottom: 12px; }
+
+/* User bar */
+.user-bar { display: flex; align-items: center; gap: 8px; padding: 0 32px 8px; }
+.user-bar img { width: 24px; height: 24px; border-radius: 50%; }
+.user-bar span { font-size: 12px; color: var(--muted); }
+.user-bar button { margin-left: auto; font-size: 11px; color: var(--light);
+  border: 1px solid var(--border); background: var(--card); border-radius: 6px;
+  padding: 4px 12px; cursor: pointer; }
+
+@media (max-width: 768px) {
+  .header, .kpi-row, .section { padding-left: 16px; padding-right: 16px; }
+  .chart-row { grid-template-columns: 1fr; }
+  .kpi-row { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<!-- Google Sign-In Auth -->
+<div id="auth-overlay">
+  <div class="auth-box">
+    <div class="auth-icon">📈</div>
+    <div class="auth-title">Joy Listing Tracker</div>
+    <div class="auth-sub">Sign in with your Avada account to continue</div>
+    <div id="g_id_onload"
+      data-client_id="445678705776-eujcfcaunh7ed1ccuk6agfojvljj4uqf.apps.googleusercontent.com"
+      data-callback="handleCredentialResponse"
+      data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin"
+      data-type="standard"
+      data-shape="rectangular"
+      data-theme="outline"
+      data-text="signin_with"
+      data-size="large"
+      data-logo_alignment="left">
+    </div>
+    <div class="auth-note">Restricted to @avadagroup.com and @avada.io</div>
+  </div>
+</div>
+
+<!-- Main Dashboard (hidden until auth) -->
+<div id="dashboard" style="display:none">
+
+<div class="header">
+  <h1>Joy Loyalty — Listing Tracker</h1>
+  <p id="header-sub">Loading...</p>
+</div>
+
+<div class="user-bar" id="user-bar" style="display:none">
+  <img id="user-pic" src="" alt="">
+  <span id="user-name"></span>
+  <button onclick="signOut()">Sign Out</button>
+</div>
+
+<!-- KPI Cards -->
+<div class="kpi-row" id="kpi-row"></div>
+
+<!-- Daily Trends -->
+<div class="section">
+  <div class="section-title">📊 Daily Trends</div>
+  <div class="tabs" id="trend-tabs">
+    <button class="tab active" onclick="showTrend('traffic')">🌐 Traffic</button>
+    <button class="tab" onclick="showTrend('installs')">📥 Installs</button>
+  </div>
+  <div class="chart-card">
+    <canvas id="trendChart" height="100"></canvas>
+  </div>
+  <div class="note">⚠️ Install data = all Avada apps (GA4 cannot filter by app). Joy-specific installs require BigQuery access.</div>
+</div>
+
+<!-- Breakdown -->
+<div class="section">
+  <div class="section-title">🔍 Traffic Breakdown (Joy Loyalty only)</div>
+  <div class="tabs" id="breakdown-tabs">
+    <button class="tab active" onclick="showBreakdown('source')">🔗 Source/Medium</button>
+    <button class="tab" onclick="showBreakdown('country')">🌍 Country</button>
+    <button class="tab" onclick="showBreakdown('campaign')">📢 Campaign</button>
+    <button class="tab" onclick="showBreakdown('keyword')">🔑 Ads Keywords</button>
+    <button class="tab" onclick="showBreakdown('utm')">🏷️ Full UTM</button>
+  </div>
+  <div class="chart-row">
+    <div class="chart-card">
+      <div class="chart-title" id="breakdown-chart-title">Sessions by Source/Medium</div>
+      <canvas id="breakdownChart" height="140"></canvas>
+    </div>
+    <div class="chart-card" style="max-height:400px;overflow-y:auto">
+      <div class="chart-title">Data Table</div>
+      <table class="data-table" id="breakdown-table">
+        <thead><tr></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Source & Country Trends -->
+<div class="section">
+  <div class="section-title">📈 Traffic Trends by Dimension</div>
+  <div class="chart-row">
+    <div class="chart-card">
+      <div class="chart-title">Daily Sessions by Top Sources</div>
+      <canvas id="sourceTrendChart" height="120"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Daily Sessions by Top Countries</div>
+      <canvas id="countryTrendChart" height="120"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- Install Breakdown -->
+<div class="section">
+  <div class="section-title">📥 Install Breakdown (All Avada Apps)</div>
+  <div class="chart-row">
+    <div class="chart-card">
+      <div class="chart-title">Installs by First User Source</div>
+      <canvas id="installSourceChart" height="140"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Installs by Country</div>
+      <canvas id="installCountryChart" height="140"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="footer" id="footer">Joy Loyalty · Listing Tracker · Loading...</div>
+
+</div><!-- /dashboard -->
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script>
+const ALLOWED_DOMAINS = ['avadagroup.com', 'avada.io'];
+const COLORS = ['#6366f1','#8b5cf6','#06b6d4','#22c55e','#f59e0b','#ef4444','#f472b6','#14b8a6','#a855f7','#3b82f6'];
+let DATA = null;
+let trendChart, breakdownChart, sourceTrendChart, countryTrendChart, installSourceChart, installCountryChart;
+
+// ── Auth ────────────────────────────────────────────────────────────────
+function handleCredentialResponse(response) {
+  const payload = JSON.parse(atob(response.credential.split('.')[1]));
+  const email = payload.email || '';
+  const domain = email.split('@')[1] || '';
+  if (!ALLOWED_DOMAINS.includes(domain)) {
+    alert('Access denied. Only @avadagroup.com and @avada.io allowed.');
+    return;
+  }
+  sessionStorage.setItem('joy_auth', JSON.stringify({
+    email, name: payload.name || email, picture: payload.picture || ''
+  }));
+  showDashboard();
+}
+
+function checkAuth() {
+  const stored = sessionStorage.getItem('joy_auth');
+  if (stored) { showDashboard(); return; }
+  document.getElementById('auth-overlay').classList.remove('hidden');
+}
+
+function showDashboard() {
+  document.getElementById('auth-overlay').classList.add('hidden');
+  document.getElementById('dashboard').style.display = 'block';
+  const user = JSON.parse(sessionStorage.getItem('joy_auth') || '{}');
+  if (user.name) {
+    const bar = document.getElementById('user-bar');
+    bar.style.display = 'flex';
+    document.getElementById('user-pic').src = user.picture;
+    document.getElementById('user-name').textContent = `${user.name} (${user.email})`;
+  }
+  loadData();
+}
+
+function signOut() {
+  sessionStorage.removeItem('joy_auth');
+  location.reload();
+}
+
+// ── Data Loading ────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const resp = await fetch('ga4-metrics.json');
+    DATA = await resp.json();
+    render();
+  } catch (e) {
+    document.getElementById('header-sub').textContent = 'Error loading data: ' + e.message;
+  }
+}
+
+function fmt(n) {
+  if (n >= 1000000) return (n/1000000).toFixed(1) + 'M';
+  if (n >= 1000) return (n/1000).toFixed(1) + 'K';
+  return n.toLocaleString();
+}
+
+function pctChange(curr, prev) {
+  if (prev === 0) return { pct: 0, cls: 'kpi-neutral', arrow: '→' };
+  const pct = ((curr - prev) / prev * 100);
+  return {
+    pct: Math.abs(pct).toFixed(1),
+    cls: pct > 0 ? 'kpi-up' : pct < 0 ? 'kpi-down' : 'kpi-neutral',
+    arrow: pct > 0 ? '↑' : pct < 0 ? '↓' : '→'
+  };
+}
+
+function parseDate(d) {
+  return new Date(d.slice(0,4) + '-' + d.slice(4,6) + '-' + d.slice(6,8));
+}
+
+function sum(arr, key) {
+  return arr.reduce((s, r) => s + (r[key] || 0), 0);
+}
+
+// ── Render ──────────────────────────────────────────────────────────────
+function render() {
+  const m = DATA.meta;
+  document.getElementById('header-sub').innerHTML =
+    `${m.period.start} — ${m.period.end} · <span class="app-badge">apps.shopify.com/joyio</span> · Updated ${new Date(m.generated_at).toLocaleString()}`;
+
+  // KPIs
+  const sessions = sum(DATA.traffic_daily, 'sessions');
+  const users = sum(DATA.traffic_daily, 'totalUsers');
+  const newUsers = sum(DATA.traffic_daily, 'newUsers');
+  const installs = sum(DATA.installs_daily, 'keyEvents:shopify_app_install');
+  const prevSessions = sum(DATA.traffic_daily_prev, 'sessions');
+  const prevUsers = sum(DATA.traffic_daily_prev, 'totalUsers');
+  const prevInstalls = sum(DATA.installs_daily_prev, 'keyEvents:shopify_app_install');
+
+  const cs = pctChange(sessions, prevSessions);
+  const cu = pctChange(users, prevUsers);
+  const ci = pctChange(installs, prevInstalls);
+
+  document.getElementById('kpi-row').innerHTML = [
+    kpi('Sessions', fmt(sessions), `${cs.arrow} ${cs.pct}% vs prev`, cs.cls),
+    kpi('Users', fmt(users), `${cu.arrow} ${cu.pct}% vs prev`, cu.cls),
+    kpi('New Users', fmt(newUsers), users > 0 ? `${(newUsers/users*100).toFixed(1)}% of total` : ''),
+    kpi('Installs (All Avada)', fmt(installs), `${ci.arrow} ${ci.pct}% vs prev`, ci.cls),
+    kpi('Avg/Day', (sessions / DATA.traffic_daily.length).toFixed(0) + ' sessions',
+      (installs / DATA.installs_daily.length).toFixed(0) + ' installs/day'),
+  ].join('');
+
+  showTrend('traffic');
+  showBreakdown('source');
+  renderDimensionTrends();
+  renderInstallBreakdowns();
+
+  document.getElementById('footer').textContent =
+    `Joy Loyalty · Listing Tracker · GA4 ${m.ga4_property} · ${new Date(m.generated_at).toLocaleString()}`;
+}
+
+function kpi(label, value, sub, cls='') {
+  return `<div class="kpi-card">
+    <div class="kpi-label">${label}</div>
+    <div class="kpi-value">${value}</div>
+    <div class="kpi-sub ${cls}">${sub}</div>
+  </div>`;
+}
+
+// ── Trend Chart ─────────────────────────────────────────────────────────
+function showTrend(mode) {
+  document.querySelectorAll('#trend-tabs .tab').forEach((t, i) => {
+    t.classList.toggle('active', (mode === 'traffic' && i === 0) || (mode === 'installs' && i === 1));
+  });
+
+  if (trendChart) trendChart.destroy();
+  const ctx = document.getElementById('trendChart').getContext('2d');
+
+  if (mode === 'traffic') {
+    const labels = DATA.traffic_daily.map(r => parseDate(r.date));
+    trendChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          { label: 'Sessions', data: DATA.traffic_daily.map(r => r.sessions),
+            borderColor: COLORS[0], backgroundColor: COLORS[0] + '15',
+            fill: true, tension: 0.3, borderWidth: 2, pointRadius: 0 },
+          { label: 'Users', data: DATA.traffic_daily.map(r => r.totalUsers),
+            borderColor: COLORS[2], borderDash: [5,5],
+            fill: false, tension: 0.3, borderWidth: 2, pointRadius: 0 },
+        ]
+      },
+      options: chartOpts('Joy Listing Traffic')
+    });
+  } else {
+    const labels = DATA.installs_daily.map(r => parseDate(r.date));
+    const vals = DATA.installs_daily.map(r => r['keyEvents:shopify_app_install']);
+    const avg = vals.reduce((a,b)=>a+b,0) / vals.length;
+    trendChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [
+          { label: 'Installs', data: vals,
+            backgroundColor: COLORS[0] + 'cc', borderRadius: 4 },
+          { label: `Avg (${avg.toFixed(0)}/day)`, data: vals.map(() => avg),
+            type: 'line', borderColor: COLORS[4], borderDash: [5,5],
+            borderWidth: 2, pointRadius: 0, fill: false },
+        ]
+      },
+      options: chartOpts('All Avada Installs')
+    });
+  }
+}
+
+function chartOpts(title) {
+  return {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'top', labels: { font: { size: 11 }, usePointStyle: true } } },
+    scales: {
+      x: { type: 'time', time: { unit: 'week', tooltipFormat: 'MMM d' },
+        grid: { display: false }, ticks: { font: { size: 10 }, color: '#9ca3af' } },
+      y: { grid: { color: '#f3f4f6' }, ticks: { font: { size: 10 }, color: '#9ca3af' } }
+    }
+  };
+}
+
+// ── Breakdown ───────────────────────────────────────────────────────────
+const BREAKDOWN_MAP = {
+  source: { data: 'traffic_by_source', dim: 'sessionSourceMedium', label: 'Source / Medium' },
+  country: { data: 'traffic_by_country', dim: 'country', label: 'Country' },
+  campaign: { data: 'traffic_by_campaign', dim: 'sessionCampaignName', label: 'Campaign' },
+  keyword: { data: 'traffic_by_keyword', dim: 'sessionGoogleAdsKeyword', label: 'Google Ads Keyword' },
+  utm: { data: 'traffic_by_utm', dim: null, label: 'UTM' },
+};
+
+function showBreakdown(key) {
+  document.querySelectorAll('#breakdown-tabs .tab').forEach(t => {
+    t.classList.toggle('active', t.textContent.toLowerCase().includes(key.slice(0,4)));
+  });
+
+  const cfg = BREAKDOWN_MAP[key];
+  const raw = DATA[cfg.data].filter(r => {
+    if (cfg.dim) return r[cfg.dim] !== '(not set)';
+    return true;
+  });
+
+  // Chart
+  if (breakdownChart) breakdownChart.destroy();
+  const ctx = document.getElementById('breakdownChart').getContext('2d');
+  document.getElementById('breakdown-chart-title').textContent = `Sessions by ${cfg.label}`;
+
+  if (key === 'utm') {
+    // UTM: table only
+    breakdownChart = new Chart(ctx, { type: 'bar', data: { labels: [], datasets: [] },
+      options: { plugins: { legend: { display: false } } } });
+    renderUTMTable(raw);
+    return;
+  }
+
+  const sorted = [...raw].sort((a,b) => b.sessions - a.sessions).slice(0, 10);
+  const labels = sorted.map(r => {
+    const v = r[cfg.dim]; return v.length > 35 ? v.slice(0,35)+'…' : v;
+  });
+
+  breakdownChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{ data: sorted.map(r => r.sessions),
+        backgroundColor: COLORS.slice(0, sorted.length).map(c => c + 'cc'),
+        borderRadius: 4 }]
+    },
+    options: {
+      indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: '#f3f4f6' }, ticks: { font: { size: 10 }, color: '#9ca3af' } },
+        y: { grid: { display: false }, ticks: { font: { size: 10 }, color: '#374151' } }
+      }
+    }
+  });
+
+  // Table
+  renderBreakdownTable(sorted, cfg.dim, cfg.label);
+}
+
+function renderBreakdownTable(rows, dim, label) {
+  const thead = document.querySelector('#breakdown-table thead tr');
+  const tbody = document.querySelector('#breakdown-table tbody');
+  thead.innerHTML = `<th>${label}</th><th class="num">Sessions</th><th class="num">Users</th><th class="num">New Users</th>`;
+  tbody.innerHTML = rows.map(r => `<tr>
+    <td>${r[dim]}</td>
+    <td class="num">${r.sessions.toLocaleString()}</td>
+    <td class="num">${r.totalUsers.toLocaleString()}</td>
+    <td class="num">${r.newUsers.toLocaleString()}</td>
+  </tr>`).join('');
+}
+
+function renderUTMTable(rows) {
+  const sorted = [...rows].sort((a,b) => b.sessions - a.sessions).slice(0, 50);
+  const thead = document.querySelector('#breakdown-table thead tr');
+  const tbody = document.querySelector('#breakdown-table tbody');
+  thead.innerHTML = `<th>Source</th><th>Medium</th><th>Campaign</th><th>Term</th><th class="num">Sessions</th><th class="num">Users</th>`;
+  tbody.innerHTML = sorted.map(r => `<tr>
+    <td>${r.sessionManualSource || '—'}</td>
+    <td>${r.sessionManualMedium || '—'}</td>
+    <td>${r.sessionManualCampaignName || '—'}</td>
+    <td>${r.sessionManualTerm || '—'}</td>
+    <td class="num">${r.sessions.toLocaleString()}</td>
+    <td class="num">${r.totalUsers.toLocaleString()}</td>
+  </tr>`).join('');
+}
+
+// ── Dimension Trends ────────────────────────────────────────────────────
+function renderDimensionTrends() {
+  // Source trend
+  const srcData = DATA.traffic_daily_by_source;
+  const topSources = [...new Map(srcData.map(r => [r.sessionSourceMedium, 0]))].map(([k]) => k);
+  const srcTotals = {};
+  srcData.forEach(r => { srcTotals[r.sessionSourceMedium] = (srcTotals[r.sessionSourceMedium]||0) + r.sessions; });
+  const top5Src = Object.entries(srcTotals).sort((a,b) => b[1]-a[1]).slice(0,5).map(([k]) => k);
+
+  const dates = [...new Set(srcData.map(r => r.date))].sort();
+  if (sourceTrendChart) sourceTrendChart.destroy();
+  sourceTrendChart = new Chart(document.getElementById('sourceTrendChart').getContext('2d'), {
+    type: 'line',
+    data: {
+      labels: dates.map(parseDate),
+      datasets: top5Src.map((src, i) => {
+        const map = {}; srcData.filter(r => r.sessionSourceMedium === src).forEach(r => map[r.date] = r.sessions);
+        return { label: src.length > 25 ? src.slice(0,25)+'…' : src,
+          data: dates.map(d => map[d] || 0),
+          borderColor: COLORS[i], borderWidth: 2, tension: 0.3, pointRadius: 0, fill: false };
+      })
+    },
+    options: chartOpts('')
+  });
+
+  // Country trend
+  const cData = DATA.traffic_daily_by_country;
+  const cTotals = {};
+  cData.forEach(r => { cTotals[r.country] = (cTotals[r.country]||0) + r.sessions; });
+  const top5C = Object.entries(cTotals).sort((a,b) => b[1]-a[1]).slice(0,5).map(([k]) => k);
+
+  const cDates = [...new Set(cData.map(r => r.date))].sort();
+  if (countryTrendChart) countryTrendChart.destroy();
+  countryTrendChart = new Chart(document.getElementById('countryTrendChart').getContext('2d'), {
+    type: 'line',
+    data: {
+      labels: cDates.map(parseDate),
+      datasets: top5C.map((c, i) => {
+        const map = {}; cData.filter(r => r.country === c).forEach(r => map[r.date] = r.sessions);
+        return { label: c, data: cDates.map(d => map[d] || 0),
+          borderColor: COLORS[i], borderWidth: 2, tension: 0.3, pointRadius: 0, fill: false };
+      })
+    },
+    options: chartOpts('')
+  });
+}
+
+// ── Install Breakdowns ──────────────────────────────────────────────────
+function renderInstallBreakdowns() {
+  const iKey = 'keyEvents:shopify_app_install';
+
+  // By source
+  const srcSorted = [...DATA.installs_by_source]
+    .filter(r => r.firstUserSourceMedium !== '(not set)')
+    .sort((a,b) => b[iKey] - a[iKey]).slice(0, 10);
+  if (installSourceChart) installSourceChart.destroy();
+  installSourceChart = new Chart(document.getElementById('installSourceChart').getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: srcSorted.map(r => { const v = r.firstUserSourceMedium; return v.length>30?v.slice(0,30)+'…':v; }),
+      datasets: [{ data: srcSorted.map(r => r[iKey]),
+        backgroundColor: COLORS.slice(0,srcSorted.length).map(c => c+'cc'), borderRadius: 4 }]
+    },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { x: { grid: { color:'#f3f4f6' }, ticks: { font:{size:10}, color:'#9ca3af' } },
+        y: { grid: { display:false }, ticks: { font:{size:10}, color:'#374151' } } } }
+  });
+
+  // By country
+  const cSorted = [...DATA.installs_by_country]
+    .filter(r => r.country !== '(not set)')
+    .sort((a,b) => b[iKey] - a[iKey]).slice(0, 10);
+  if (installCountryChart) installCountryChart.destroy();
+  installCountryChart = new Chart(document.getElementById('installCountryChart').getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: cSorted.map(r => r.country),
+      datasets: [{ data: cSorted.map(r => r[iKey]),
+        backgroundColor: COLORS.slice(0,cSorted.length).map(c => c+'cc'), borderRadius: 4 }]
+    },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { x: { grid: { color:'#f3f4f6' }, ticks: { font:{size:10}, color:'#9ca3af' } },
+        y: { grid: { display:false }, ticks: { font:{size:10}, color:'#374151' } } } }
+  });
+}
+
+// ── Init ────────────────────────────────────────────────────────────────
+window.addEventListener('load', checkAuth);
+</script>
+</body>
+</html>
