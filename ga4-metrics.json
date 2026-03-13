@@ -11,9 +11,10 @@
       "start": "2025-09-14",
       "end": "2025-12-12"
     },
-    "generated_at": "2026-03-13T09:23:12.044598",
+    "generated_at": "2026-03-13T09:42:52.076548",
     "notes": {
-      "traffic": "Filtered to apps.shopify.com/joyio only"
+      "traffic": "Filtered to hostName=apps.shopify.com AND pagePath=/joyio",
+      "installs": "Filtered by landingPage=/joyio \u2014 covers installs from listing page visitors only"
     }
   },
   "traffic_daily": [
@@ -67724,6 +67725,1398 @@
       "date": "20260312",
       "country": "T\u00fcrkiye",
       "sessions": 1
+    }
+  ],
+  "installs_daily": [
+    {
+      "date": "20251213",
+      "keyEvents:shopify_app_install": 10
+    },
+    {
+      "date": "20251214",
+      "keyEvents:shopify_app_install": 12
+    },
+    {
+      "date": "20251215",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "date": "20251216",
+      "keyEvents:shopify_app_install": 20
+    },
+    {
+      "date": "20251217",
+      "keyEvents:shopify_app_install": 28
+    },
+    {
+      "date": "20251218",
+      "keyEvents:shopify_app_install": 16
+    },
+    {
+      "date": "20251219",
+      "keyEvents:shopify_app_install": 20
+    },
+    {
+      "date": "20251220",
+      "keyEvents:shopify_app_install": 7
+    },
+    {
+      "date": "20251221",
+      "keyEvents:shopify_app_install": 14
+    },
+    {
+      "date": "20251222",
+      "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20251223",
+      "keyEvents:shopify_app_install": 13
+    },
+    {
+      "date": "20251224",
+      "keyEvents:shopify_app_install": 19
+    },
+    {
+      "date": "20251225",
+      "keyEvents:shopify_app_install": 13
+    },
+    {
+      "date": "20251226",
+      "keyEvents:shopify_app_install": 11
+    },
+    {
+      "date": "20251227",
+      "keyEvents:shopify_app_install": 13
+    },
+    {
+      "date": "20251228",
+      "keyEvents:shopify_app_install": 6
+    },
+    {
+      "date": "20251229",
+      "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20251230",
+      "keyEvents:shopify_app_install": 17
+    },
+    {
+      "date": "20251231",
+      "keyEvents:shopify_app_install": 18
+    },
+    {
+      "date": "20260101",
+      "keyEvents:shopify_app_install": 7
+    },
+    {
+      "date": "20260102",
+      "keyEvents:shopify_app_install": 20
+    },
+    {
+      "date": "20260103",
+      "keyEvents:shopify_app_install": 12
+    },
+    {
+      "date": "20260104",
+      "keyEvents:shopify_app_install": 17
+    },
+    {
+      "date": "20260105",
+      "keyEvents:shopify_app_install": 27
+    },
+    {
+      "date": "20260106",
+      "keyEvents:shopify_app_install": 20
+    },
+    {
+      "date": "20260107",
+      "keyEvents:shopify_app_install": 24
+    },
+    {
+      "date": "20260108",
+      "keyEvents:shopify_app_install": 29
+    },
+    {
+      "date": "20260109",
+      "keyEvents:shopify_app_install": 32
+    },
+    {
+      "date": "20260110",
+      "keyEvents:shopify_app_install": 18
+    },
+    {
+      "date": "20260111",
+      "keyEvents:shopify_app_install": 22
+    },
+    {
+      "date": "20260112",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "date": "20260113",
+      "keyEvents:shopify_app_install": 26
+    },
+    {
+      "date": "20260114",
+      "keyEvents:shopify_app_install": 12
+    },
+    {
+      "date": "20260115",
+      "keyEvents:shopify_app_install": 20
+    },
+    {
+      "date": "20260116",
+      "keyEvents:shopify_app_install": 24
+    },
+    {
+      "date": "20260117",
+      "keyEvents:shopify_app_install": 12
+    },
+    {
+      "date": "20260118",
+      "keyEvents:shopify_app_install": 7
+    },
+    {
+      "date": "20260119",
+      "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20260120",
+      "keyEvents:shopify_app_install": 26
+    },
+    {
+      "date": "20260121",
+      "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20260122",
+      "keyEvents:shopify_app_install": 25
+    },
+    {
+      "date": "20260123",
+      "keyEvents:shopify_app_install": 20
+    },
+    {
+      "date": "20260124",
+      "keyEvents:shopify_app_install": 8
+    },
+    {
+      "date": "20260125",
+      "keyEvents:shopify_app_install": 13
+    },
+    {
+      "date": "20260126",
+      "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20260127",
+      "keyEvents:shopify_app_install": 23
+    },
+    {
+      "date": "20260128",
+      "keyEvents:shopify_app_install": 20
+    },
+    {
+      "date": "20260129",
+      "keyEvents:shopify_app_install": 30
+    },
+    {
+      "date": "20260130",
+      "keyEvents:shopify_app_install": 24
+    },
+    {
+      "date": "20260131",
+      "keyEvents:shopify_app_install": 14
+    },
+    {
+      "date": "20260201",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "date": "20260202",
+      "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20260203",
+      "keyEvents:shopify_app_install": 24
+    },
+    {
+      "date": "20260204",
+      "keyEvents:shopify_app_install": 23
+    },
+    {
+      "date": "20260205",
+      "keyEvents:shopify_app_install": 33
+    },
+    {
+      "date": "20260206",
+      "keyEvents:shopify_app_install": 18
+    },
+    {
+      "date": "20260207",
+      "keyEvents:shopify_app_install": 16
+    },
+    {
+      "date": "20260208",
+      "keyEvents:shopify_app_install": 18
+    },
+    {
+      "date": "20260209",
+      "keyEvents:shopify_app_install": 16
+    },
+    {
+      "date": "20260210",
+      "keyEvents:shopify_app_install": 22
+    },
+    {
+      "date": "20260211",
+      "keyEvents:shopify_app_install": 27
+    },
+    {
+      "date": "20260212",
+      "keyEvents:shopify_app_install": 27
+    },
+    {
+      "date": "20260213",
+      "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20260214",
+      "keyEvents:shopify_app_install": 11
+    },
+    {
+      "date": "20260215",
+      "keyEvents:shopify_app_install": 10
+    },
+    {
+      "date": "20260216",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "date": "20260217",
+      "keyEvents:shopify_app_install": 18
+    },
+    {
+      "date": "20260218",
+      "keyEvents:shopify_app_install": 22
+    },
+    {
+      "date": "20260219",
+      "keyEvents:shopify_app_install": 22
+    },
+    {
+      "date": "20260220",
+      "keyEvents:shopify_app_install": 17
+    },
+    {
+      "date": "20260221",
+      "keyEvents:shopify_app_install": 19
+    },
+    {
+      "date": "20260222",
+      "keyEvents:shopify_app_install": 9
+    },
+    {
+      "date": "20260223",
+      "keyEvents:shopify_app_install": 22
+    },
+    {
+      "date": "20260224",
+      "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20260225",
+      "keyEvents:shopify_app_install": 20
+    },
+    {
+      "date": "20260226",
+      "keyEvents:shopify_app_install": 18
+    },
+    {
+      "date": "20260227",
+      "keyEvents:shopify_app_install": 23
+    },
+    {
+      "date": "20260228",
+      "keyEvents:shopify_app_install": 11
+    },
+    {
+      "date": "20260301",
+      "keyEvents:shopify_app_install": 14
+    },
+    {
+      "date": "20260302",
+      "keyEvents:shopify_app_install": 16
+    },
+    {
+      "date": "20260303",
+      "keyEvents:shopify_app_install": 22
+    },
+    {
+      "date": "20260304",
+      "keyEvents:shopify_app_install": 26
+    },
+    {
+      "date": "20260305",
+      "keyEvents:shopify_app_install": 17
+    },
+    {
+      "date": "20260306",
+      "keyEvents:shopify_app_install": 22
+    },
+    {
+      "date": "20260307",
+      "keyEvents:shopify_app_install": 19
+    },
+    {
+      "date": "20260308",
+      "keyEvents:shopify_app_install": 10
+    },
+    {
+      "date": "20260309",
+      "keyEvents:shopify_app_install": 23
+    },
+    {
+      "date": "20260310",
+      "keyEvents:shopify_app_install": 27
+    },
+    {
+      "date": "20260311",
+      "keyEvents:shopify_app_install": 26
+    },
+    {
+      "date": "20260312",
+      "keyEvents:shopify_app_install": 30
+    }
+  ],
+  "installs_daily_prev": [
+    {
+      "date": "20250914",
+      "keyEvents:shopify_app_install": 27
+    },
+    {
+      "date": "20250915",
+      "keyEvents:shopify_app_install": 37
+    },
+    {
+      "date": "20250916",
+      "keyEvents:shopify_app_install": 40
+    },
+    {
+      "date": "20250917",
+      "keyEvents:shopify_app_install": 41
+    },
+    {
+      "date": "20250918",
+      "keyEvents:shopify_app_install": 50
+    },
+    {
+      "date": "20250919",
+      "keyEvents:shopify_app_install": 37
+    },
+    {
+      "date": "20250920",
+      "keyEvents:shopify_app_install": 26
+    },
+    {
+      "date": "20250921",
+      "keyEvents:shopify_app_install": 24
+    },
+    {
+      "date": "20250922",
+      "keyEvents:shopify_app_install": 32
+    },
+    {
+      "date": "20250923",
+      "keyEvents:shopify_app_install": 25
+    },
+    {
+      "date": "20250924",
+      "keyEvents:shopify_app_install": 37
+    },
+    {
+      "date": "20250925",
+      "keyEvents:shopify_app_install": 33
+    },
+    {
+      "date": "20250926",
+      "keyEvents:shopify_app_install": 46
+    },
+    {
+      "date": "20250927",
+      "keyEvents:shopify_app_install": 25
+    },
+    {
+      "date": "20250928",
+      "keyEvents:shopify_app_install": 22
+    },
+    {
+      "date": "20250929",
+      "keyEvents:shopify_app_install": 49
+    },
+    {
+      "date": "20250930",
+      "keyEvents:shopify_app_install": 43
+    },
+    {
+      "date": "20251001",
+      "keyEvents:shopify_app_install": 42
+    },
+    {
+      "date": "20251002",
+      "keyEvents:shopify_app_install": 36
+    },
+    {
+      "date": "20251003",
+      "keyEvents:shopify_app_install": 30
+    },
+    {
+      "date": "20251004",
+      "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20251005",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "date": "20251006",
+      "keyEvents:shopify_app_install": 33
+    },
+    {
+      "date": "20251007",
+      "keyEvents:shopify_app_install": 31
+    },
+    {
+      "date": "20251008",
+      "keyEvents:shopify_app_install": 35
+    },
+    {
+      "date": "20251009",
+      "keyEvents:shopify_app_install": 28
+    },
+    {
+      "date": "20251010",
+      "keyEvents:shopify_app_install": 26
+    },
+    {
+      "date": "20251011",
+      "keyEvents:shopify_app_install": 20
+    },
+    {
+      "date": "20251012",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "date": "20251013",
+      "keyEvents:shopify_app_install": 24
+    },
+    {
+      "date": "20251014",
+      "keyEvents:shopify_app_install": 49
+    },
+    {
+      "date": "20251015",
+      "keyEvents:shopify_app_install": 31
+    },
+    {
+      "date": "20251016",
+      "keyEvents:shopify_app_install": 24
+    },
+    {
+      "date": "20251017",
+      "keyEvents:shopify_app_install": 18
+    },
+    {
+      "date": "20251018",
+      "keyEvents:shopify_app_install": 25
+    },
+    {
+      "date": "20251019",
+      "keyEvents:shopify_app_install": 16
+    },
+    {
+      "date": "20251020",
+      "keyEvents:shopify_app_install": 26
+    },
+    {
+      "date": "20251021",
+      "keyEvents:shopify_app_install": 25
+    },
+    {
+      "date": "20251022",
+      "keyEvents:shopify_app_install": 34
+    },
+    {
+      "date": "20251023",
+      "keyEvents:shopify_app_install": 29
+    },
+    {
+      "date": "20251024",
+      "keyEvents:shopify_app_install": 16
+    },
+    {
+      "date": "20251025",
+      "keyEvents:shopify_app_install": 17
+    },
+    {
+      "date": "20251026",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "date": "20251027",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "date": "20251028",
+      "keyEvents:shopify_app_install": 30
+    },
+    {
+      "date": "20251029",
+      "keyEvents:shopify_app_install": 27
+    },
+    {
+      "date": "20251030",
+      "keyEvents:shopify_app_install": 30
+    },
+    {
+      "date": "20251031",
+      "keyEvents:shopify_app_install": 28
+    },
+    {
+      "date": "20251101",
+      "keyEvents:shopify_app_install": 13
+    },
+    {
+      "date": "20251102",
+      "keyEvents:shopify_app_install": 14
+    },
+    {
+      "date": "20251103",
+      "keyEvents:shopify_app_install": 27
+    },
+    {
+      "date": "20251104",
+      "keyEvents:shopify_app_install": 27
+    },
+    {
+      "date": "20251105",
+      "keyEvents:shopify_app_install": 29
+    },
+    {
+      "date": "20251106",
+      "keyEvents:shopify_app_install": 35
+    },
+    {
+      "date": "20251107",
+      "keyEvents:shopify_app_install": 24
+    },
+    {
+      "date": "20251108",
+      "keyEvents:shopify_app_install": 14
+    },
+    {
+      "date": "20251109",
+      "keyEvents:shopify_app_install": 16
+    },
+    {
+      "date": "20251110",
+      "keyEvents:shopify_app_install": 18
+    },
+    {
+      "date": "20251111",
+      "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20251112",
+      "keyEvents:shopify_app_install": 31
+    },
+    {
+      "date": "20251113",
+      "keyEvents:shopify_app_install": 24
+    },
+    {
+      "date": "20251114",
+      "keyEvents:shopify_app_install": 35
+    },
+    {
+      "date": "20251115",
+      "keyEvents:shopify_app_install": 18
+    },
+    {
+      "date": "20251116",
+      "keyEvents:shopify_app_install": 11
+    },
+    {
+      "date": "20251117",
+      "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20251118",
+      "keyEvents:shopify_app_install": 27
+    },
+    {
+      "date": "20251119",
+      "keyEvents:shopify_app_install": 39
+    },
+    {
+      "date": "20251120",
+      "keyEvents:shopify_app_install": 29
+    },
+    {
+      "date": "20251121",
+      "keyEvents:shopify_app_install": 29
+    },
+    {
+      "date": "20251122",
+      "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20251123",
+      "keyEvents:shopify_app_install": 16
+    },
+    {
+      "date": "20251124",
+      "keyEvents:shopify_app_install": 29
+    },
+    {
+      "date": "20251125",
+      "keyEvents:shopify_app_install": 38
+    },
+    {
+      "date": "20251126",
+      "keyEvents:shopify_app_install": 26
+    },
+    {
+      "date": "20251127",
+      "keyEvents:shopify_app_install": 18
+    },
+    {
+      "date": "20251128",
+      "keyEvents:shopify_app_install": 30
+    },
+    {
+      "date": "20251129",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "date": "20251130",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "date": "20251201",
+      "keyEvents:shopify_app_install": 19
+    },
+    {
+      "date": "20251202",
+      "keyEvents:shopify_app_install": 24
+    },
+    {
+      "date": "20251203",
+      "keyEvents:shopify_app_install": 23
+    },
+    {
+      "date": "20251204",
+      "keyEvents:shopify_app_install": 25
+    },
+    {
+      "date": "20251205",
+      "keyEvents:shopify_app_install": 17
+    },
+    {
+      "date": "20251206",
+      "keyEvents:shopify_app_install": 13
+    },
+    {
+      "date": "20251207",
+      "keyEvents:shopify_app_install": 17
+    },
+    {
+      "date": "20251208",
+      "keyEvents:shopify_app_install": 19
+    },
+    {
+      "date": "20251209",
+      "keyEvents:shopify_app_install": 14
+    },
+    {
+      "date": "20251210",
+      "keyEvents:shopify_app_install": 29
+    },
+    {
+      "date": "20251211",
+      "keyEvents:shopify_app_install": 23
+    },
+    {
+      "date": "20251212",
+      "keyEvents:shopify_app_install": 22
+    }
+  ],
+  "installs_by_source": [
+    {
+      "firstUserSourceMedium": "(direct) / (none)",
+      "keyEvents:shopify_app_install": 1119
+    },
+    {
+      "firstUserSourceMedium": "1303400-impact / cpa",
+      "keyEvents:shopify_app_install": 12
+    },
+    {
+      "firstUserSourceMedium": "Avada-product-page / block",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "Dondy / card",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "Gokwik / banner",
+      "keyEvents:shopify_app_install": 6
+    },
+    {
+      "firstUserSourceMedium": "The4 / inapp",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "firstUserSourceMedium": "YouTube / youtube_description",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "admin / (not set)",
+      "keyEvents:shopify_app_install": 41
+    },
+    {
+      "firstUserSourceMedium": "admin / shopify",
+      "keyEvents:shopify_app_install": 9
+    },
+    {
+      "firstUserSourceMedium": "admin-mobile-app / (not set)",
+      "keyEvents:shopify_app_install": 8
+    },
+    {
+      "firstUserSourceMedium": "aeo / banner",
+      "keyEvents:shopify_app_install": 6
+    },
+    {
+      "firstUserSourceMedium": "aeo / card",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "firstUserSourceMedium": "air / banner",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "firstUserSourceMedium": "air / banner_",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "firstUserSourceMedium": "air / card_",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "air / card_button",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "firstUserSourceMedium": "air / modal",
+      "keyEvents:shopify_app_install": 7
+    },
+    {
+      "firstUserSourceMedium": "airReviews / modal",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "airrieviews / dashboard",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "aovbundle / card_",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "firstUserSourceMedium": "app.airreviews.io / referral",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "app.meetchatty.com / referral",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "firstUserSourceMedium": "bing / organic",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "blog / editBlog",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "firstUserSourceMedium": "builder.gempages.net / referral",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "chat.cjdropshipping.com / referral",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "chatgpt.com / referral",
+      "keyEvents:shopify_app_install": 5
+    },
+    {
+      "firstUserSourceMedium": "chatty / banner",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "firstUserSourceMedium": "cjdropshipping.com / referral",
+      "keyEvents:shopify_app_install": 6
+    },
+    {
+      "firstUserSourceMedium": "customer-dashboard-pro / (not set)",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "dev.avada.io / referral",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "digismoothie.com / referral",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "docs.avada.io / referral",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "ecosia.org / organic",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "google / cpc",
+      "keyEvents:shopify_app_install": 94
+    },
+    {
+      "firstUserSourceMedium": "google / organic",
+      "keyEvents:shopify_app_install": 36
+    },
+    {
+      "firstUserSourceMedium": "google?utm_medium=organic_blog?utm_campaign=free-loyalty-programs-for-small-businesses / referral",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "joy / (not set)",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "joy / demostore",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "firstUserSourceMedium": "joy / inbound",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "joy / integration_",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "joy / userguide_",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "joy.so / referral",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "joysub / banner",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "joysub / card_button",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "firstUserSourceMedium": "judge.me / partnership",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "judgeme / in-app",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "mozart / email",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "mpinstafeed / rcmapp",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "mpsizechart / rcmapp",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "orderlimit / card_button",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "partnership / halothemes",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "firstUserSourceMedium": "sasi.heymantle.com / referral",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "seaaccessibility / banner",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "seaaccessibility / card",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "seo / homepage",
+      "keyEvents:shopify_app_install": 12
+    },
+    {
+      "firstUserSourceMedium": "seo-suite / (not set)",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "seo.apps.avada.io / referral",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "seoonBlog / card_",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "seosuite / banner",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "firstUserSourceMedium": "seosuite / banner_",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "seosuite / card",
+      "keyEvents:shopify_app_install": 45
+    },
+    {
+      "firstUserSourceMedium": "shopify / (not set)",
+      "keyEvents:shopify_app_install": 190
+    },
+    {
+      "firstUserSourceMedium": "shopvid / card_button",
+      "keyEvents:shopify_app_install": 5
+    },
+    {
+      "firstUserSourceMedium": "spos-fee-surcharge.firebaseapp.com / referral",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "upsell.avada.io / referral",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "firstUserSourceMedium": "web_joy / seo_blog",
+      "keyEvents:shopify_app_install": 1
+    }
+  ],
+  "installs_by_country": [
+    {
+      "country": "(not set)",
+      "keyEvents:shopify_app_install": 5
+    },
+    {
+      "country": "Albania",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Algeria",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "country": "Angola",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Argentina",
+      "keyEvents:shopify_app_install": 4
+    },
+    {
+      "country": "Australia",
+      "keyEvents:shopify_app_install": 66
+    },
+    {
+      "country": "Austria",
+      "keyEvents:shopify_app_install": 6
+    },
+    {
+      "country": "Azerbaijan",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Bahrain",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "country": "Bangladesh",
+      "keyEvents:shopify_app_install": 11
+    },
+    {
+      "country": "Belgium",
+      "keyEvents:shopify_app_install": 7
+    },
+    {
+      "country": "Brazil",
+      "keyEvents:shopify_app_install": 34
+    },
+    {
+      "country": "Bulgaria",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "country": "Cameroon",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Canada",
+      "keyEvents:shopify_app_install": 57
+    },
+    {
+      "country": "Chile",
+      "keyEvents:shopify_app_install": 14
+    },
+    {
+      "country": "China",
+      "keyEvents:shopify_app_install": 17
+    },
+    {
+      "country": "Colombia",
+      "keyEvents:shopify_app_install": 11
+    },
+    {
+      "country": "Congo - Kinshasa",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "country": "Costa Rica",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Cyprus",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "country": "Czechia",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "country": "C\u00f4te d\u2019Ivoire",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "country": "Denmark",
+      "keyEvents:shopify_app_install": 8
+    },
+    {
+      "country": "Dominican Republic",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "country": "Ecuador",
+      "keyEvents:shopify_app_install": 4
+    },
+    {
+      "country": "Egypt",
+      "keyEvents:shopify_app_install": 20
+    },
+    {
+      "country": "Ethiopia",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Fiji",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Finland",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "France",
+      "keyEvents:shopify_app_install": 106
+    },
+    {
+      "country": "French Polynesia",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Germany",
+      "keyEvents:shopify_app_install": 37
+    },
+    {
+      "country": "Ghana",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Greece",
+      "keyEvents:shopify_app_install": 11
+    },
+    {
+      "country": "Guadeloupe",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Guatemala",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Guinea",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Honduras",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Hong Kong",
+      "keyEvents:shopify_app_install": 23
+    },
+    {
+      "country": "Hungary",
+      "keyEvents:shopify_app_install": 7
+    },
+    {
+      "country": "India",
+      "keyEvents:shopify_app_install": 162
+    },
+    {
+      "country": "Indonesia",
+      "keyEvents:shopify_app_install": 17
+    },
+    {
+      "country": "Iraq",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "country": "Ireland",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Israel",
+      "keyEvents:shopify_app_install": 13
+    },
+    {
+      "country": "Italy",
+      "keyEvents:shopify_app_install": 47
+    },
+    {
+      "country": "Jamaica",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "country": "Japan",
+      "keyEvents:shopify_app_install": 35
+    },
+    {
+      "country": "Kenya",
+      "keyEvents:shopify_app_install": 4
+    },
+    {
+      "country": "Kuwait",
+      "keyEvents:shopify_app_install": 4
+    },
+    {
+      "country": "Latvia",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "country": "Lebanon",
+      "keyEvents:shopify_app_install": 6
+    },
+    {
+      "country": "Lithuania",
+      "keyEvents:shopify_app_install": 4
+    },
+    {
+      "country": "Luxembourg",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Malaysia",
+      "keyEvents:shopify_app_install": 18
+    },
+    {
+      "country": "Mali",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Mexico",
+      "keyEvents:shopify_app_install": 30
+    },
+    {
+      "country": "Moldova",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Morocco",
+      "keyEvents:shopify_app_install": 12
+    },
+    {
+      "country": "Nepal",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "country": "Netherlands",
+      "keyEvents:shopify_app_install": 12
+    },
+    {
+      "country": "New Zealand",
+      "keyEvents:shopify_app_install": 12
+    },
+    {
+      "country": "Nigeria",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "country": "North Macedonia",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Norway",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "country": "Oman",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Pakistan",
+      "keyEvents:shopify_app_install": 59
+    },
+    {
+      "country": "Paraguay",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Peru",
+      "keyEvents:shopify_app_install": 9
+    },
+    {
+      "country": "Philippines",
+      "keyEvents:shopify_app_install": 15
+    },
+    {
+      "country": "Poland",
+      "keyEvents:shopify_app_install": 6
+    },
+    {
+      "country": "Portugal",
+      "keyEvents:shopify_app_install": 8
+    },
+    {
+      "country": "Qatar",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Romania",
+      "keyEvents:shopify_app_install": 9
+    },
+    {
+      "country": "R\u00e9union",
+      "keyEvents:shopify_app_install": 5
+    },
+    {
+      "country": "Saudi Arabia",
+      "keyEvents:shopify_app_install": 9
+    },
+    {
+      "country": "Senegal",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "country": "Serbia",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Singapore",
+      "keyEvents:shopify_app_install": 26
+    },
+    {
+      "country": "Slovakia",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "country": "South Africa",
+      "keyEvents:shopify_app_install": 8
+    },
+    {
+      "country": "South Korea",
+      "keyEvents:shopify_app_install": 9
+    },
+    {
+      "country": "Spain",
+      "keyEvents:shopify_app_install": 30
+    },
+    {
+      "country": "St. Pierre & Miquelon",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Sweden",
+      "keyEvents:shopify_app_install": 8
+    },
+    {
+      "country": "Switzerland",
+      "keyEvents:shopify_app_install": 6
+    },
+    {
+      "country": "Taiwan",
+      "keyEvents:shopify_app_install": 14
+    },
+    {
+      "country": "Thailand",
+      "keyEvents:shopify_app_install": 11
+    },
+    {
+      "country": "Tunisia",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "T\u00fcrkiye",
+      "keyEvents:shopify_app_install": 17
+    },
+    {
+      "country": "Ukraine",
+      "keyEvents:shopify_app_install": 3
+    },
+    {
+      "country": "United Arab Emirates",
+      "keyEvents:shopify_app_install": 14
+    },
+    {
+      "country": "United Kingdom",
+      "keyEvents:shopify_app_install": 50
+    },
+    {
+      "country": "United States",
+      "keyEvents:shopify_app_install": 375
+    },
+    {
+      "country": "Uruguay",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Uzbekistan",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
+      "country": "Venezuela",
+      "keyEvents:shopify_app_install": 2
+    },
+    {
+      "country": "Vietnam",
+      "keyEvents:shopify_app_install": 111
     }
   ]
 }
