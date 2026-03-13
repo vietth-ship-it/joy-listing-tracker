@@ -140,20 +140,15 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 
 <!-- Daily Trends -->
 <div class="section">
-  <div class="section-title">📊 Daily Trends</div>
-  <div class="tabs" id="trend-tabs">
-    <button class="tab active" onclick="showTrend('traffic')">🌐 Traffic</button>
-    <button class="tab" onclick="showTrend('installs')">📥 Installs</button>
-  </div>
+  <div class="section-title">📊 Daily Traffic Trends</div>
   <div class="chart-card">
     <div class="chart-wrap"><canvas id="trendChart"></canvas></div>
   </div>
-  <div class="note">⚠️ Install data = all Avada apps (GA4 cannot filter by app). Joy-specific installs require BigQuery access.</div>
 </div>
 
 <!-- Breakdown -->
 <div class="section">
-  <div class="section-title">🔍 Traffic Breakdown (Joy Loyalty only)</div>
+  <div class="section-title">🔍 Traffic Breakdown</div>
   <div class="tabs" id="breakdown-tabs">
     <button class="tab active" onclick="showBreakdown('source')">🔗 Source/Medium</button>
     <button class="tab" onclick="showBreakdown('country')">🌍 Country</button>
@@ -191,20 +186,6 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   </div>
 </div>
 
-<!-- Install Breakdown -->
-<div class="section">
-  <div class="section-title">📥 Install Breakdown (All Avada Apps)</div>
-  <div class="chart-row">
-    <div class="chart-card">
-      <div class="chart-title">Installs by First User Source</div>
-      <div class="chart-wrap-sm"><canvas id="installSourceChart"></canvas></div>
-    </div>
-    <div class="chart-card">
-      <div class="chart-title">Installs by Country</div>
-      <div class="chart-wrap-sm"><canvas id="installCountryChart"></canvas></div>
-    </div>
-  </div>
-</div>
 
 <div class="footer" id="footer">Joy Loyalty · Listing Tracker · Loading...</div>
 
@@ -215,7 +196,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 const CODE_HASH = '20998cf4a88ff2ae3a0131a3d23bc0d03a6e796e08feb2b46c7d7b7e99fee9f5';
 const COLORS = ['#6366f1','#8b5cf6','#06b6d4','#22c55e','#f59e0b','#ef4444','#f472b6','#14b8a6','#a855f7','#3b82f6'];
 let DATA = null;
-let trendChart, breakdownChart, sourceTrendChart, countryTrendChart, installSourceChart, installCountryChart;
+let trendChart, breakdownChart, sourceTrendChart, countryTrendChart;
 
 // ── Auth ────────────────────────────────────────────────────────────────
 async function hashCode(str) {
@@ -297,28 +278,24 @@ function render() {
   const sessions = sum(DATA.traffic_daily, 'sessions');
   const users = sum(DATA.traffic_daily, 'totalUsers');
   const newUsers = sum(DATA.traffic_daily, 'newUsers');
-  const installs = sum(DATA.installs_daily, 'keyEvents:shopify_app_install');
   const prevSessions = sum(DATA.traffic_daily_prev, 'sessions');
   const prevUsers = sum(DATA.traffic_daily_prev, 'totalUsers');
-  const prevInstalls = sum(DATA.installs_daily_prev, 'keyEvents:shopify_app_install');
 
   const cs = pctChange(sessions, prevSessions);
   const cu = pctChange(users, prevUsers);
-  const ci = pctChange(installs, prevInstalls);
+  const days = DATA.traffic_daily.length;
 
   document.getElementById('kpi-row').innerHTML = [
     kpi('Sessions', fmt(sessions), `${cs.arrow} ${cs.pct}% vs prev`, cs.cls),
     kpi('Users', fmt(users), `${cu.arrow} ${cu.pct}% vs prev`, cu.cls),
     kpi('New Users', fmt(newUsers), users > 0 ? `${(newUsers/users*100).toFixed(1)}% of total` : ''),
-    kpi('Installs (All Avada)', fmt(installs), `${ci.arrow} ${ci.pct}% vs prev`, ci.cls),
-    kpi('Avg/Day', (sessions / DATA.traffic_daily.length).toFixed(0) + ' sessions',
-      (installs / DATA.installs_daily.length).toFixed(0) + ' installs/day'),
+    kpi('Avg/Day', (sessions / days).toFixed(0) + ' sessions',
+      (users / days).toFixed(0) + ' users/day'),
   ].join('');
 
-  showTrend('traffic');
+  showTrafficTrend();
   showBreakdown('source');
   renderDimensionTrends();
-  renderInstallBreakdowns();
 
   document.getElementById('footer').textContent =
     `Joy Loyalty · Listing Tracker · GA4 ${m.ga4_property} · ${new Date(m.generated_at).toLocaleString()}`;
@@ -333,50 +310,25 @@ function kpi(label, value, sub, cls='') {
 }
 
 // ── Trend Chart ─────────────────────────────────────────────────────────
-function showTrend(mode) {
-  document.querySelectorAll('#trend-tabs .tab').forEach((t, i) => {
-    t.classList.toggle('active', (mode === 'traffic' && i === 0) || (mode === 'installs' && i === 1));
-  });
-
+function showTrafficTrend() {
   if (trendChart) trendChart.destroy();
   const ctx = document.getElementById('trendChart').getContext('2d');
-
-  if (mode === 'traffic') {
-    const labels = DATA.traffic_daily.map(r => parseDate(r.date));
-    trendChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels,
-        datasets: [
-          { label: 'Sessions', data: DATA.traffic_daily.map(r => r.sessions),
-            borderColor: COLORS[0], backgroundColor: COLORS[0] + '15',
-            fill: true, tension: 0.3, borderWidth: 2, pointRadius: 0 },
-          { label: 'Users', data: DATA.traffic_daily.map(r => r.totalUsers),
-            borderColor: COLORS[2], borderDash: [5,5],
-            fill: false, tension: 0.3, borderWidth: 2, pointRadius: 0 },
-        ]
-      },
-      options: chartOpts('Joy Listing Traffic')
-    });
-  } else {
-    const labels = DATA.installs_daily.map(r => parseDate(r.date));
-    const vals = DATA.installs_daily.map(r => r['keyEvents:shopify_app_install']);
-    const avg = vals.reduce((a,b)=>a+b,0) / vals.length;
-    trendChart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels,
-        datasets: [
-          { label: 'Installs', data: vals,
-            backgroundColor: COLORS[0] + 'cc', borderRadius: 4 },
-          { label: `Avg (${avg.toFixed(0)}/day)`, data: vals.map(() => avg),
-            type: 'line', borderColor: COLORS[4], borderDash: [5,5],
-            borderWidth: 2, pointRadius: 0, fill: false },
-        ]
-      },
-      options: chartOpts('All Avada Installs')
-    });
-  }
+  const labels = DATA.traffic_daily.map(r => parseDate(r.date));
+  trendChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        { label: 'Sessions', data: DATA.traffic_daily.map(r => r.sessions),
+          borderColor: COLORS[0], backgroundColor: COLORS[0] + '15',
+          fill: true, tension: 0.3, borderWidth: 2, pointRadius: 0 },
+        { label: 'Users', data: DATA.traffic_daily.map(r => r.totalUsers),
+          borderColor: COLORS[2], borderDash: [5,5],
+          fill: false, tension: 0.3, borderWidth: 2, pointRadius: 0 },
+      ]
+    },
+    options: chartOpts('Joy Listing Traffic')
+  });
 }
 
 function chartOpts(title) {
@@ -522,47 +474,6 @@ function renderDimensionTrends() {
       })
     },
     options: chartOpts('')
-  });
-}
-
-// ── Install Breakdowns ──────────────────────────────────────────────────
-function renderInstallBreakdowns() {
-  const iKey = 'keyEvents:shopify_app_install';
-
-  // By source
-  const srcSorted = [...DATA.installs_by_source]
-    .filter(r => r.firstUserSourceMedium !== '(not set)')
-    .sort((a,b) => b[iKey] - a[iKey]).slice(0, 10);
-  if (installSourceChart) installSourceChart.destroy();
-  installSourceChart = new Chart(document.getElementById('installSourceChart').getContext('2d'), {
-    type: 'bar',
-    data: {
-      labels: srcSorted.map(r => { const v = r.firstUserSourceMedium; return v.length>30?v.slice(0,30)+'…':v; }),
-      datasets: [{ data: srcSorted.map(r => r[iKey]),
-        backgroundColor: COLORS.slice(0,srcSorted.length).map(c => c+'cc'), borderRadius: 4 }]
-    },
-    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false } },
-      scales: { x: { grid: { color:'#f3f4f6' }, ticks: { font:{size:10}, color:'#9ca3af' } },
-        y: { grid: { display:false }, ticks: { font:{size:10}, color:'#374151' } } } }
-  });
-
-  // By country
-  const cSorted = [...DATA.installs_by_country]
-    .filter(r => r.country !== '(not set)')
-    .sort((a,b) => b[iKey] - a[iKey]).slice(0, 10);
-  if (installCountryChart) installCountryChart.destroy();
-  installCountryChart = new Chart(document.getElementById('installCountryChart').getContext('2d'), {
-    type: 'bar',
-    data: {
-      labels: cSorted.map(r => r.country),
-      datasets: [{ data: cSorted.map(r => r[iKey]),
-        backgroundColor: COLORS.slice(0,cSorted.length).map(c => c+'cc'), borderRadius: 4 }]
-    },
-    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false } },
-      scales: { x: { grid: { color:'#f3f4f6' }, ticks: { font:{size:10}, color:'#9ca3af' } },
-        y: { grid: { display:false }, ticks: { font:{size:10}, color:'#374151' } } } }
   });
 }
 

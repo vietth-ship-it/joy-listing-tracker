@@ -3,9 +3,7 @@ Fetch GA4 data for Joy Loyalty app listing and export to JSON.
 Run: GOOGLE_APPLICATION_CREDENTIALS=service-account.json python3 fetch-ga4.py
 
 Note: GA4 property 381282244 tracks ALL Avada apps on Shopify App Store.
-- Traffic: filtered to hostName=apps.shopify.com AND pagePath=/joyio
-- Installs: cannot be filtered per-app in GA4 (event has no app dimension)
-  → We report total Avada installs. Joy-specific installs require BigQuery.
+All data is filtered to hostName=apps.shopify.com AND pagePath=/joyio (Joy only).
 """
 
 import json, os, warnings
@@ -87,9 +85,8 @@ def main():
 
     jf = joy_page_filter()
     traffic_metrics = ["sessions", "totalUsers", "newUsers"]
-    install_metrics = ["keyEvents:shopify_app_install"]
 
-    print(f"Fetching GA4 data: {start} to {end}...")
+    print(f"Fetching GA4 data (Joy only): {start} to {end}...")
 
     data = {
         "meta": {
@@ -100,8 +97,7 @@ def main():
             "prev_period": {"start": prev_start, "end": prev_end},
             "generated_at": datetime.now().isoformat(),
             "notes": {
-                "traffic": "Filtered to apps.shopify.com/joyio only",
-                "installs": "All Avada apps (GA4 cannot filter installs by app). Joy-specific installs require BigQuery."
+                "traffic": "Filtered to apps.shopify.com/joyio only"
             }
         },
 
@@ -126,27 +122,15 @@ def main():
             ["date", "sessionSourceMedium"], ["sessions"], jf, 5000),
         "traffic_daily_by_country": query(client, start, end,
             ["date", "country"], ["sessions"], jf, 5000),
-
-        # === INSTALLS (all Avada apps — no page filter) ===
-        "installs_daily": query(client, start, end,
-            ["date"], install_metrics),
-        "installs_daily_prev": query(client, prev_start, prev_end,
-            ["date"], install_metrics),
-        "installs_by_source": query(client, start, end,
-            ["firstUserSourceMedium"], install_metrics),
-        "installs_by_country": query(client, start, end,
-            ["country"], install_metrics),
     }
 
     with open(OUTPUT_FILE, "w") as f:
         json.dump(data, f, indent=2)
 
     t_sessions = sum(r["sessions"] for r in data["traffic_daily"])
-    t_installs = sum(r["keyEvents:shopify_app_install"] for r in data["installs_daily"])
     print(f"Done! {OUTPUT_FILE} ({os.path.getsize(OUTPUT_FILE)/1024:.0f} KB)")
     print(f"  Period: {start} → {end}")
     print(f"  Joy listing sessions: {t_sessions:,}")
-    print(f"  All Avada installs: {t_installs:,}")
 
 
 if __name__ == "__main__":
