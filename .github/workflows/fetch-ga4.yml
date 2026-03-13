@@ -1,0 +1,40 @@
+name: Fetch GA4 Data
+
+on:
+  schedule:
+    # Run daily at 7:00 UTC (14:00 Vietnam time)
+    - cron: '0 7 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Write service account key
+        run: echo '${{ secrets.GOOGLE_SA_KEY }}' > service-account.json
+
+      - name: Fetch GA4 data
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: service-account.json
+        run: python fetch-ga4.py
+
+      - name: Commit & push if changed
+        run: |
+          rm -f service-account.json
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ga4-metrics.json
+          git diff --cached --quiet || git commit -m "Update GA4 data $(date -u +%Y-%m-%d)"
+          git push
