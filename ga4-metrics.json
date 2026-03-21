@@ -4,26 +4,20 @@
     "listing": "apps.shopify.com/joyio",
     "ga4_property": "381282244",
     "period": {
-      "start": "2025-12-20",
-      "end": "2026-03-19"
+      "start": "2025-12-21",
+      "end": "2026-03-20"
     },
     "prev_period": {
-      "start": "2025-09-21",
-      "end": "2025-12-19"
+      "start": "2025-09-22",
+      "end": "2025-12-20"
     },
-    "generated_at": "2026-03-20T07:49:11.623626",
+    "generated_at": "2026-03-21T07:36:17.449190",
     "notes": {
       "traffic": "Filtered to hostName=apps.shopify.com AND pagePath=/joyio",
       "installs": "Filtered by landingPage=/joyio \u2014 covers installs from listing page visitors only"
     }
   },
   "traffic_daily": [
-    {
-      "date": "20251220",
-      "sessions": 150,
-      "totalUsers": 132,
-      "newUsers": 111
-    },
     {
       "date": "20251221",
       "sessions": 153,
@@ -557,15 +551,15 @@
       "sessions": 211,
       "totalUsers": 166,
       "newUsers": 165
+    },
+    {
+      "date": "20260320",
+      "sessions": 173,
+      "totalUsers": 140,
+      "newUsers": 121
     }
   ],
   "traffic_daily_prev": [
-    {
-      "date": "20250921",
-      "sessions": 180,
-      "totalUsers": 151,
-      "newUsers": 141
-    },
     {
       "date": "20250922",
       "sessions": 295,
@@ -1099,6 +1093,12 @@
       "sessions": 219,
       "totalUsers": 192,
       "newUsers": 180
+    },
+    {
+      "date": "20251220",
+      "sessions": 150,
+      "totalUsers": 132,
+      "newUsers": 111
     }
   ],
   "traffic_by_source": [
@@ -1110,9 +1110,9 @@
     },
     {
       "sessionSourceMedium": "(direct) / (none)",
-      "sessions": 8774,
-      "totalUsers": 6216,
-      "newUsers": 6960
+      "sessions": 8802,
+      "totalUsers": 6226,
+      "newUsers": 6977
     },
     {
       "sessionSourceMedium": "(not set)",
@@ -1146,9 +1146,9 @@
     },
     {
       "sessionSourceMedium": "1303400-impact / cpa",
-      "sessions": 426,
-      "totalUsers": 281,
-      "newUsers": 306
+      "sessions": 431,
+      "totalUsers": 282,
+      "newUsers": 310
     },
     {
       "sessionSourceMedium": "2112581-impact / cpa",
@@ -1248,9 +1248,9 @@
     },
     {
       "sessionSourceMedium": "Gokwik / banner",
-      "sessions": 105,
-      "totalUsers": 78,
-      "newUsers": 84
+      "sessions": 102,
+      "totalUsers": 76,
+      "newUsers": 82
     },
     {
       "sessionSourceMedium": "Joy / integration",
@@ -1304,7 +1304,7 @@
       "sessionSourceMedium": "admin / (not set)",
       "sessions": 97,
       "totalUsers": 70,
-      "newUsers": 62
+      "newUsers": 61
     },
     {
       "sessionSourceMedium": "admin / shopify",
@@ -1314,32 +1314,32 @@
     },
     {
       "sessionSourceMedium": "admin-mobile-app / (not set)",
-      "sessions": 42,
-      "totalUsers": 34,
-      "newUsers": 26
+      "sessions": 44,
+      "totalUsers": 35,
+      "newUsers": 28
     },
     {
       "sessionSourceMedium": "aeo / banner",
-      "sessions": 115,
-      "totalUsers": 88,
-      "newUsers": 98
+      "sessions": 113,
+      "totalUsers": 87,
+      "newUsers": 96
     },
     {
       "sessionSourceMedium": "aeo / card",
-      "sessions": 247,
-      "totalUsers": 198,
-      "newUsers": 218
+      "sessions": 248,
+      "totalUsers": 199,
+      "newUsers": 219
     },
     {
       "sessionSourceMedium": "air / banner",
-      "sessions": 462,
-      "totalUsers": 374,
-      "newUsers": 365
+      "sessions": 447,
+      "totalUsers": 363,
+      "newUsers": 354
     },
     {
       "sessionSourceMedium": "air / banner_",
-      "sessions": 60,
-      "totalUsers": 47,
+      "sessions": 58,
+      "totalUsers": 45,
       "newUsers": 11
     },
     {
@@ -1350,9 +1350,9 @@
     },
     {
       "sessionSourceMedium": "air / card_button",
-      "sessions": 168,
-      "totalUsers": 140,
-      "newUsers": 146
+      "sessions": 173,
+      "totalUsers": 144,
+      "newUsers": 151
     },
     {
       "sessionSourceMedium": "air / modal",
@@ -1440,8 +1440,8 @@
     },
     {
       "sessionSourceMedium": "app.airreviews.io / referral",
-      "sessions": 52,
-      "totalUsers": 33,
+      "sessions": 54,
+      "totalUsers": 35,
       "newUsers": 37
     },
     {
@@ -1500,9 +1500,9 @@
     },
     {
       "sessionSourceMedium": "avada / web_button",
-      "sessions": 60,
+      "sessions": 61,
       "totalUsers": 45,
-      "newUsers": 31
+      "newUsers": 32
     },
     {
       "sessionSourceMedium": "avada-boost-sales / atc-animation",
@@ -1536,7 +1536,7 @@
     },
     {
       "sessionSourceMedium": "bd_tab / 5type",
-      "sessions": 2,
+      "sessions": 3,
       "totalUsers": 2,
       "newUsers": 2
     },
@@ -1548,9 +1548,9 @@
     },
     {
       "sessionSourceMedium": "bing / organic",
-      "sessions": 14,
-      "totalUsers": 8,
-      "newUsers": 10
+      "sessions": 16,
+      "totalUsers": 9,
+      "newUsers": 11
     },
     {
       "sessionSourceMedium": "boostsales / card_",
@@ -1644,15 +1644,15 @@
     },
     {
       "sessionSourceMedium": "chatgpt.com / referral",
-      "sessions": 83,
-      "totalUsers": 43,
-      "newUsers": 61
+      "sessions": 81,
+      "totalUsers": 42,
+      "newUsers": 60
     },
     {
       "sessionSourceMedium": "chatty / banner",
-      "sessions": 113,
-      "totalUsers": 66,
-      "newUsers": 95
+      "sessions": 107,
+      "totalUsers": 61,
+      "newUsers": 91
     },
     {
       "sessionSourceMedium": "chatty / banner_",
@@ -1704,9 +1704,9 @@
     },
     {
       "sessionSourceMedium": "chatty / web_button",
-      "sessions": 5,
+      "sessions": 7,
       "totalUsers": 4,
-      "newUsers": 3
+      "newUsers": 4
     },
     {
       "sessionSourceMedium": "cjdropshipping.com / referral",
@@ -1884,15 +1884,15 @@
     },
     {
       "sessionSourceMedium": "google / cpc",
-      "sessions": 15398,
-      "totalUsers": 14207,
-      "newUsers": 14233
+      "sessions": 15383,
+      "totalUsers": 14184,
+      "newUsers": 14215
     },
     {
       "sessionSourceMedium": "google / organic",
-      "sessions": 1381,
-      "totalUsers": 744,
-      "newUsers": 881
+      "sessions": 1394,
+      "totalUsers": 752,
+      "newUsers": 888
     },
     {
       "sessionSourceMedium": "google ads / click search",
@@ -1956,9 +1956,9 @@
     },
     {
       "sessionSourceMedium": "joy / banner_",
-      "sessions": 38,
+      "sessions": 41,
       "totalUsers": 6,
-      "newUsers": 9
+      "newUsers": 12
     },
     {
       "sessionSourceMedium": "joy / demostore",
@@ -1998,9 +1998,9 @@
     },
     {
       "sessionSourceMedium": "joy / userguide_",
-      "sessions": 21,
-      "totalUsers": 17,
-      "newUsers": 18
+      "sessions": 22,
+      "totalUsers": 18,
+      "newUsers": 19
     },
     {
       "sessionSourceMedium": "joy / web",
@@ -2094,9 +2094,9 @@
     },
     {
       "sessionSourceMedium": "judge.me / partnership",
-      "sessions": 69,
-      "totalUsers": 45,
-      "newUsers": 57
+      "sessions": 70,
+      "totalUsers": 46,
+      "newUsers": 58
     },
     {
       "sessionSourceMedium": "keep.google.com / referral",
@@ -2124,8 +2124,8 @@
     },
     {
       "sessionSourceMedium": "linkedin.com / referral",
-      "sessions": 8,
-      "totalUsers": 2,
+      "sessions": 9,
+      "totalUsers": 3,
       "newUsers": 6
     },
     {
@@ -2142,9 +2142,9 @@
     },
     {
       "sessionSourceMedium": "mail.google.com / referral",
-      "sessions": 5,
-      "totalUsers": 3,
-      "newUsers": 4
+      "sessions": 7,
+      "totalUsers": 4,
+      "newUsers": 5
     },
     {
       "sessionSourceMedium": "mobileapp.grootapps.com / referral",
@@ -2172,7 +2172,7 @@
     },
     {
       "sessionSourceMedium": "okapya.atlassian.net / referral",
-      "sessions": 17,
+      "sessions": 18,
       "totalUsers": 1,
       "newUsers": 6
     },
@@ -2334,9 +2334,9 @@
     },
     {
       "sessionSourceMedium": "seaaccessibility / banner",
-      "sessions": 31,
-      "totalUsers": 24,
-      "newUsers": 26
+      "sessions": 30,
+      "totalUsers": 23,
+      "newUsers": 25
     },
     {
       "sessionSourceMedium": "seaaccessibility / card",
@@ -2388,9 +2388,9 @@
     },
     {
       "sessionSourceMedium": "seo / homepage",
-      "sessions": 42,
+      "sessions": 41,
       "totalUsers": 38,
-      "newUsers": 16
+      "newUsers": 15
     },
     {
       "sessionSourceMedium": "seo-suite / (not set)",
@@ -2424,9 +2424,9 @@
     },
     {
       "sessionSourceMedium": "seosuite / card",
-      "sessions": 590,
-      "totalUsers": 479,
-      "newUsers": 511
+      "sessions": 592,
+      "totalUsers": 481,
+      "newUsers": 512
     },
     {
       "sessionSourceMedium": "seosuite / checklist",
@@ -2436,9 +2436,9 @@
     },
     {
       "sessionSourceMedium": "sherpas / card_button",
-      "sessions": 4,
-      "totalUsers": 4,
-      "newUsers": 4
+      "sessions": 3,
+      "totalUsers": 3,
+      "newUsers": 3
     },
     {
       "sessionSourceMedium": "shopify / (none)",
@@ -2448,9 +2448,9 @@
     },
     {
       "sessionSourceMedium": "shopify / (not set)",
-      "sessions": 1187,
-      "totalUsers": 667,
-      "newUsers": 881
+      "sessions": 1195,
+      "totalUsers": 668,
+      "newUsers": 886
     },
     {
       "sessionSourceMedium": "shopify / organic",
@@ -2610,9 +2610,9 @@
     },
     {
       "sessionSourceMedium": "web_joy / seo_blog",
-      "sessions": 107,
-      "totalUsers": 85,
-      "newUsers": 87
+      "sessions": 108,
+      "totalUsers": 86,
+      "newUsers": 88
     },
     {
       "sessionSourceMedium": "website / pricing_free",
@@ -2654,9 +2654,9 @@
     },
     {
       "country": "Algeria",
-      "sessions": 20,
-      "totalUsers": 19,
-      "newUsers": 18
+      "sessions": 19,
+      "totalUsers": 18,
+      "newUsers": 17
     },
     {
       "country": "Anguilla",
@@ -2672,9 +2672,9 @@
     },
     {
       "country": "Argentina",
-      "sessions": 296,
-      "totalUsers": 260,
-      "newUsers": 266
+      "sessions": 291,
+      "totalUsers": 256,
+      "newUsers": 262
     },
     {
       "country": "Armenia",
@@ -2691,14 +2691,14 @@
     {
       "country": "Australia",
       "sessions": 528,
-      "totalUsers": 339,
-      "newUsers": 398
+      "totalUsers": 340,
+      "newUsers": 399
     },
     {
       "country": "Austria",
-      "sessions": 31,
-      "totalUsers": 25,
-      "newUsers": 25
+      "sessions": 30,
+      "totalUsers": 24,
+      "newUsers": 24
     },
     {
       "country": "Azerbaijan",
@@ -2714,15 +2714,15 @@
     },
     {
       "country": "Bahrain",
-      "sessions": 56,
-      "totalUsers": 47,
-      "newUsers": 49
+      "sessions": 54,
+      "totalUsers": 46,
+      "newUsers": 48
     },
     {
       "country": "Bangladesh",
-      "sessions": 137,
-      "totalUsers": 87,
-      "newUsers": 102
+      "sessions": 138,
+      "totalUsers": 88,
+      "newUsers": 103
     },
     {
       "country": "Barbados",
@@ -2740,7 +2740,7 @@
       "country": "Belgium",
       "sessions": 77,
       "totalUsers": 53,
-      "newUsers": 59
+      "newUsers": 60
     },
     {
       "country": "Benin",
@@ -2774,9 +2774,9 @@
     },
     {
       "country": "Brazil",
-      "sessions": 541,
+      "sessions": 542,
       "totalUsers": 454,
-      "newUsers": 475
+      "newUsers": 476
     },
     {
       "country": "British Virgin Islands",
@@ -2792,15 +2792,15 @@
     },
     {
       "country": "Bulgaria",
-      "sessions": 44,
-      "totalUsers": 27,
-      "newUsers": 27
+      "sessions": 45,
+      "totalUsers": 28,
+      "newUsers": 28
     },
     {
       "country": "Cambodia",
-      "sessions": 11,
-      "totalUsers": 8,
-      "newUsers": 10
+      "sessions": 12,
+      "totalUsers": 9,
+      "newUsers": 11
     },
     {
       "country": "Cameroon",
@@ -2810,8 +2810,8 @@
     },
     {
       "country": "Canada",
-      "sessions": 752,
-      "totalUsers": 528,
+      "sessions": 748,
+      "totalUsers": 523,
       "newUsers": 597
     },
     {
@@ -2822,21 +2822,21 @@
     },
     {
       "country": "Chile",
-      "sessions": 133,
-      "totalUsers": 92,
-      "newUsers": 96
+      "sessions": 131,
+      "totalUsers": 90,
+      "newUsers": 94
     },
     {
       "country": "China",
-      "sessions": 294,
-      "totalUsers": 223,
-      "newUsers": 250
+      "sessions": 282,
+      "totalUsers": 211,
+      "newUsers": 237
     },
     {
       "country": "Colombia",
-      "sessions": 182,
+      "sessions": 184,
       "totalUsers": 115,
-      "newUsers": 144
+      "newUsers": 145
     },
     {
       "country": "Congo - Kinshasa",
@@ -2846,9 +2846,9 @@
     },
     {
       "country": "Costa Rica",
-      "sessions": 15,
+      "sessions": 16,
       "totalUsers": 11,
-      "newUsers": 10
+      "newUsers": 11
     },
     {
       "country": "Croatia",
@@ -2864,9 +2864,9 @@
     },
     {
       "country": "Cyprus",
-      "sessions": 8,
-      "totalUsers": 7,
-      "newUsers": 7
+      "sessions": 9,
+      "totalUsers": 8,
+      "newUsers": 8
     },
     {
       "country": "Czechia",
@@ -2882,9 +2882,9 @@
     },
     {
       "country": "Denmark",
-      "sessions": 78,
-      "totalUsers": 39,
-      "newUsers": 53
+      "sessions": 79,
+      "totalUsers": 40,
+      "newUsers": 54
     },
     {
       "country": "Dominican Republic",
@@ -2900,7 +2900,7 @@
     },
     {
       "country": "Egypt",
-      "sessions": 202,
+      "sessions": 201,
       "totalUsers": 138,
       "newUsers": 160
     },
@@ -2930,14 +2930,14 @@
     },
     {
       "country": "Finland",
-      "sessions": 20,
-      "totalUsers": 17,
-      "newUsers": 16
+      "sessions": 19,
+      "totalUsers": 16,
+      "newUsers": 15
     },
     {
       "country": "France",
       "sessions": 534,
-      "totalUsers": 352,
+      "totalUsers": 351,
       "newUsers": 423
     },
     {
@@ -2960,9 +2960,9 @@
     },
     {
       "country": "Germany",
-      "sessions": 346,
-      "totalUsers": 252,
-      "newUsers": 279
+      "sessions": 349,
+      "totalUsers": 251,
+      "newUsers": 280
     },
     {
       "country": "Ghana",
@@ -2978,15 +2978,15 @@
     },
     {
       "country": "Greece",
-      "sessions": 28,
-      "totalUsers": 17,
-      "newUsers": 21
+      "sessions": 29,
+      "totalUsers": 18,
+      "newUsers": 22
     },
     {
       "country": "Guadeloupe",
-      "sessions": 2,
-      "totalUsers": 2,
-      "newUsers": 2
+      "sessions": 4,
+      "totalUsers": 3,
+      "newUsers": 4
     },
     {
       "country": "Guatemala",
@@ -3032,7 +3032,7 @@
     },
     {
       "country": "Hungary",
-      "sessions": 66,
+      "sessions": 65,
       "totalUsers": 45,
       "newUsers": 57
     },
@@ -3045,8 +3045,8 @@
     {
       "country": "India",
       "sessions": 1943,
-      "totalUsers": 1331,
-      "newUsers": 1479
+      "totalUsers": 1330,
+      "newUsers": 1474
     },
     {
       "country": "Indonesia",
@@ -3080,9 +3080,9 @@
     },
     {
       "country": "Italy",
-      "sessions": 315,
-      "totalUsers": 198,
-      "newUsers": 248
+      "sessions": 318,
+      "totalUsers": 199,
+      "newUsers": 250
     },
     {
       "country": "Jamaica",
@@ -3092,9 +3092,9 @@
     },
     {
       "country": "Japan",
-      "sessions": 505,
-      "totalUsers": 276,
-      "newUsers": 366
+      "sessions": 506,
+      "totalUsers": 277,
+      "newUsers": 367
     },
     {
       "country": "Jordan",
@@ -3146,7 +3146,7 @@
     },
     {
       "country": "Lithuania",
-      "sessions": 25,
+      "sessions": 26,
       "totalUsers": 12,
       "newUsers": 20
     },
@@ -3170,9 +3170,9 @@
     },
     {
       "country": "Malaysia",
-      "sessions": 223,
-      "totalUsers": 142,
-      "newUsers": 175
+      "sessions": 221,
+      "totalUsers": 140,
+      "newUsers": 173
     },
     {
       "country": "Maldives",
@@ -3194,9 +3194,9 @@
     },
     {
       "country": "Martinique",
-      "sessions": 5,
-      "totalUsers": 3,
-      "newUsers": 4
+      "sessions": 7,
+      "totalUsers": 4,
+      "newUsers": 5
     },
     {
       "country": "Mauritius",
@@ -3207,8 +3207,8 @@
     {
       "country": "Mexico",
       "sessions": 12918,
-      "totalUsers": 11903,
-      "newUsers": 11956
+      "totalUsers": 11907,
+      "newUsers": 11961
     },
     {
       "country": "Moldova",
@@ -3236,9 +3236,9 @@
     },
     {
       "country": "Morocco",
-      "sessions": 82,
-      "totalUsers": 60,
-      "newUsers": 66
+      "sessions": 81,
+      "totalUsers": 59,
+      "newUsers": 65
     },
     {
       "country": "Mozambique",
@@ -3260,33 +3260,27 @@
     },
     {
       "country": "Nepal",
-      "sessions": 8,
-      "totalUsers": 7,
+      "sessions": 9,
+      "totalUsers": 8,
       "newUsers": 6
     },
     {
       "country": "Netherlands",
-      "sessions": 173,
+      "sessions": 172,
       "totalUsers": 120,
       "newUsers": 131
     },
     {
       "country": "New Zealand",
-      "sessions": 116,
-      "totalUsers": 99,
-      "newUsers": 101
-    },
-    {
-      "country": "Nicaragua",
-      "sessions": 1,
-      "totalUsers": 1,
-      "newUsers": 0
+      "sessions": 115,
+      "totalUsers": 98,
+      "newUsers": 100
     },
     {
       "country": "Nigeria",
-      "sessions": 60,
-      "totalUsers": 53,
-      "newUsers": 52
+      "sessions": 61,
+      "totalUsers": 54,
+      "newUsers": 53
     },
     {
       "country": "North Macedonia",
@@ -3308,9 +3302,9 @@
     },
     {
       "country": "Pakistan",
-      "sessions": 559,
-      "totalUsers": 445,
-      "newUsers": 481
+      "sessions": 548,
+      "totalUsers": 437,
+      "newUsers": 472
     },
     {
       "country": "Palestine",
@@ -3326,8 +3320,8 @@
     },
     {
       "country": "Paraguay",
-      "sessions": 5,
-      "totalUsers": 3,
+      "sessions": 7,
+      "totalUsers": 4,
       "newUsers": 4
     },
     {
@@ -3338,21 +3332,21 @@
     },
     {
       "country": "Philippines",
-      "sessions": 209,
+      "sessions": 210,
       "totalUsers": 123,
-      "newUsers": 164
+      "newUsers": 165
     },
     {
       "country": "Poland",
-      "sessions": 91,
+      "sessions": 92,
       "totalUsers": 68,
       "newUsers": 68
     },
     {
       "country": "Portugal",
-      "sessions": 65,
-      "totalUsers": 55,
-      "newUsers": 46
+      "sessions": 66,
+      "totalUsers": 56,
+      "newUsers": 47
     },
     {
       "country": "Puerto Rico",
@@ -3368,9 +3362,9 @@
     },
     {
       "country": "Romania",
-      "sessions": 86,
-      "totalUsers": 60,
-      "newUsers": 73
+      "sessions": 84,
+      "totalUsers": 59,
+      "newUsers": 71
     },
     {
       "country": "Russia",
@@ -3410,9 +3404,9 @@
     },
     {
       "country": "Singapore",
-      "sessions": 815,
-      "totalUsers": 600,
-      "newUsers": 661
+      "sessions": 827,
+      "totalUsers": 611,
+      "newUsers": 677
     },
     {
       "country": "Slovakia",
@@ -3434,8 +3428,8 @@
     },
     {
       "country": "South Africa",
-      "sessions": 122,
-      "totalUsers": 85,
+      "sessions": 123,
+      "totalUsers": 84,
       "newUsers": 92
     },
     {
@@ -3446,9 +3440,9 @@
     },
     {
       "country": "Spain",
-      "sessions": 247,
-      "totalUsers": 167,
-      "newUsers": 190
+      "sessions": 243,
+      "totalUsers": 165,
+      "newUsers": 188
     },
     {
       "country": "Sri Lanka",
@@ -3476,14 +3470,14 @@
     },
     {
       "country": "Sweden",
-      "sessions": 73,
-      "totalUsers": 46,
-      "newUsers": 51
+      "sessions": 72,
+      "totalUsers": 45,
+      "newUsers": 49
     },
     {
       "country": "Switzerland",
-      "sessions": 61,
-      "totalUsers": 45,
+      "sessions": 60,
+      "totalUsers": 44,
       "newUsers": 49
     },
     {
@@ -3494,9 +3488,9 @@
     },
     {
       "country": "Taiwan",
-      "sessions": 174,
-      "totalUsers": 124,
-      "newUsers": 143
+      "sessions": 178,
+      "totalUsers": 126,
+      "newUsers": 145
     },
     {
       "country": "Thailand",
@@ -3512,9 +3506,9 @@
     },
     {
       "country": "Trinidad & Tobago",
-      "sessions": 3,
-      "totalUsers": 2,
-      "newUsers": 3
+      "sessions": 4,
+      "totalUsers": 3,
+      "newUsers": 4
     },
     {
       "country": "Tunisia",
@@ -3524,9 +3518,9 @@
     },
     {
       "country": "T\u00fcrkiye",
-      "sessions": 391,
-      "totalUsers": 314,
-      "newUsers": 322
+      "sessions": 385,
+      "totalUsers": 310,
+      "newUsers": 319
     },
     {
       "country": "U.S. Virgin Islands",
@@ -3536,33 +3530,33 @@
     },
     {
       "country": "Uganda",
-      "sessions": 1,
-      "totalUsers": 1,
-      "newUsers": 1
+      "sessions": 3,
+      "totalUsers": 2,
+      "newUsers": 3
     },
     {
       "country": "Ukraine",
-      "sessions": 48,
+      "sessions": 49,
       "totalUsers": 29,
       "newUsers": 31
     },
     {
       "country": "United Arab Emirates",
-      "sessions": 129,
-      "totalUsers": 97,
-      "newUsers": 102
+      "sessions": 128,
+      "totalUsers": 96,
+      "newUsers": 101
     },
     {
       "country": "United Kingdom",
-      "sessions": 505,
-      "totalUsers": 332,
-      "newUsers": 382
+      "sessions": 511,
+      "totalUsers": 335,
+      "newUsers": 386
     },
     {
       "country": "United States",
-      "sessions": 3480,
-      "totalUsers": 2323,
-      "newUsers": 2645
+      "sessions": 3482,
+      "totalUsers": 2324,
+      "newUsers": 2648
     },
     {
       "country": "Uruguay",
@@ -3578,15 +3572,15 @@
     },
     {
       "country": "Venezuela",
-      "sessions": 24,
-      "totalUsers": 12,
-      "newUsers": 22
+      "sessions": 23,
+      "totalUsers": 11,
+      "newUsers": 21
     },
     {
       "country": "Vietnam",
-      "sessions": 1354,
-      "totalUsers": 503,
-      "newUsers": 757
+      "sessions": 1368,
+      "totalUsers": 506,
+      "newUsers": 765
     },
     {
       "country": "Western Sahara",
@@ -3616,27 +3610,27 @@
     },
     {
       "sessionCampaignName": "(direct)",
-      "sessions": 8774,
-      "totalUsers": 6216,
-      "newUsers": 6960
+      "sessions": 8802,
+      "totalUsers": 6226,
+      "newUsers": 6977
     },
     {
       "sessionCampaignName": "(not set)",
-      "sessions": 275,
-      "totalUsers": 212,
-      "newUsers": 169
+      "sessions": 277,
+      "totalUsers": 214,
+      "newUsers": 171
     },
     {
       "sessionCampaignName": "(organic)",
-      "sessions": 1406,
-      "totalUsers": 760,
-      "newUsers": 899
+      "sessions": 1421,
+      "totalUsers": 769,
+      "newUsers": 907
     },
     {
       "sessionCampaignName": "(referral)",
-      "sessions": 520,
-      "totalUsers": 326,
-      "newUsers": 299
+      "sessions": 524,
+      "totalUsers": 329,
+      "newUsers": 298
     },
     {
       "sessionCampaignName": "Avada-Ecomposer BFCM",
@@ -3712,9 +3706,9 @@
     },
     {
       "sessionCampaignName": "Installs - Search - 02/26",
-      "sessions": 192,
-      "totalUsers": 167,
-      "newUsers": 171
+      "sessions": 197,
+      "totalUsers": 170,
+      "newUsers": 175
     },
     {
       "sessionCampaignName": "JOY_cross_promo_CD",
@@ -3760,9 +3754,9 @@
     },
     {
       "sessionCampaignName": "Search | Apps Brand | 16/01/24",
-      "sessions": 115,
-      "totalUsers": 74,
-      "newUsers": 84
+      "sessions": 113,
+      "totalUsers": 72,
+      "newUsers": 83
     },
     {
       "sessionCampaignName": "Search | Chatty | 17/02/24",
@@ -3778,9 +3772,9 @@
     },
     {
       "sessionCampaignName": "Search | Joy | 02/10/24",
-      "sessions": 1322,
-      "totalUsers": 1055,
-      "newUsers": 1131
+      "sessions": 1295,
+      "totalUsers": 1034,
+      "newUsers": 1110
     },
     {
       "sessionCampaignName": "Search | SEO | 16/01/24",
@@ -3852,13 +3846,13 @@
       "sessionCampaignName": "admin-home-card",
       "sessions": 97,
       "totalUsers": 70,
-      "newUsers": 62
+      "newUsers": 61
     },
     {
       "sessionCampaignName": "admin-search",
-      "sessions": 853,
-      "totalUsers": 469,
-      "newUsers": 643
+      "sessions": 863,
+      "totalUsers": 472,
+      "newUsers": 650
     },
     {
       "sessionCampaignName": "airReview_partnership",
@@ -3892,8 +3886,8 @@
     },
     {
       "sessionCampaignName": "app-card-1c76cf8a2c51f2fcf7a52ae3db9b0d6f",
-      "sessions": 207,
-      "totalUsers": 124,
+      "sessions": 206,
+      "totalUsers": 123,
       "newUsers": 156
     },
     {
@@ -3954,12 +3948,6 @@
       "sessionCampaignName": "app-card-c4b6ba87763777f561db30bc6260698e",
       "sessions": 2,
       "totalUsers": 2,
-      "newUsers": 1
-    },
-    {
-      "sessionCampaignName": "app-card-c66b561f5bb42d1dca07b6d236a27278",
-      "sessions": 2,
-      "totalUsers": 1,
       "newUsers": 1
     },
     {
@@ -4078,9 +4066,9 @@
     },
     {
       "sessionCampaignName": "blogpost",
-      "sessions": 1,
-      "totalUsers": 1,
-      "newUsers": 1
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2
     },
     {
       "sessionCampaignName": "box_new_feature",
@@ -4102,8 +4090,8 @@
     },
     {
       "sessionCampaignName": "bundle_demostore",
-      "sessions": 9,
-      "totalUsers": 7,
+      "sessions": 8,
+      "totalUsers": 6,
       "newUsers": 4
     },
     {
@@ -4138,9 +4126,9 @@
     },
     {
       "sessionCampaignName": "collect reviews",
-      "sessions": 127,
-      "totalUsers": 110,
-      "newUsers": 110
+      "sessions": 131,
+      "totalUsers": 113,
+      "newUsers": 114
     },
     {
       "sessionCampaignName": "collect-review",
@@ -4192,9 +4180,9 @@
     },
     {
       "sessionCampaignName": "customer_Block_crossapp",
-      "sessions": 18,
+      "sessions": 21,
       "totalUsers": 4,
-      "newUsers": 7
+      "newUsers": 10
     },
     {
       "sessionCampaignName": "customer_Block_crossapp?ref=avada",
@@ -4210,9 +4198,9 @@
     },
     {
       "sessionCampaignName": "dashboard",
-      "sessions": 1282,
-      "totalUsers": 943,
-      "newUsers": 1033
+      "sessions": 1275,
+      "totalUsers": 938,
+      "newUsers": 1028
     },
     {
       "sessionCampaignName": "dashboard_",
@@ -4276,9 +4264,9 @@
     },
     {
       "sessionCampaignName": "free-loyalty-programs-for-small-businesses",
-      "sessions": 96,
-      "totalUsers": 81,
-      "newUsers": 84
+      "sessions": 97,
+      "totalUsers": 82,
+      "newUsers": 85
     },
     {
       "sessionCampaignName": "hero_banner",
@@ -4294,15 +4282,15 @@
     },
     {
       "sessionCampaignName": "homepage",
-      "sessions": 44,
+      "sessions": 45,
       "totalUsers": 36,
-      "newUsers": 23
+      "newUsers": 24
     },
     {
       "sessionCampaignName": "homepage_",
-      "sessions": 4,
-      "totalUsers": 4,
-      "newUsers": 4
+      "sessions": 3,
+      "totalUsers": 3,
+      "newUsers": 3
     },
     {
       "sessionCampaignName": "homepage_SEO_Xmas_25",
@@ -4318,9 +4306,9 @@
     },
     {
       "sessionCampaignName": "installed",
-      "sessions": 99,
-      "totalUsers": 63,
-      "newUsers": 69
+      "sessions": 102,
+      "totalUsers": 64,
+      "newUsers": 70
     },
     {
       "sessionCampaignName": "installt2",
@@ -4342,15 +4330,15 @@
     },
     {
       "sessionCampaignName": "integrations_",
-      "sessions": 1,
+      "sessions": 3,
       "totalUsers": 1,
-      "newUsers": 1
+      "newUsers": 2
     },
     {
       "sessionCampaignName": "integrations_install",
-      "sessions": 41,
-      "totalUsers": 32,
-      "newUsers": 36
+      "sessions": 42,
+      "totalUsers": 33,
+      "newUsers": 37
     },
     {
       "sessionCampaignName": "interactive",
@@ -4384,9 +4372,9 @@
     },
     {
       "sessionCampaignName": "joy_homepage",
-      "sessions": 264,
+      "sessions": 266,
       "totalUsers": 177,
-      "newUsers": 199
+      "newUsers": 200
     },
     {
       "sessionCampaignName": "joy_membership_program",
@@ -4408,9 +4396,9 @@
     },
     {
       "sessionCampaignName": "joy_pricing",
-      "sessions": 80,
+      "sessions": 82,
       "totalUsers": 47,
-      "newUsers": 54
+      "newUsers": 55
     },
     {
       "sessionCampaignName": "joy_reward_programs",
@@ -4426,9 +4414,9 @@
     },
     {
       "sessionCampaignName": "landingpage",
-      "sessions": 111,
-      "totalUsers": 83,
-      "newUsers": 88
+      "sessions": 108,
+      "totalUsers": 81,
+      "newUsers": 86
     },
     {
       "sessionCampaignName": "loyalty programs_install",
@@ -4456,14 +4444,14 @@
     },
     {
       "sessionCampaignName": "manage_reviews",
-      "sessions": 439,
-      "totalUsers": 355,
-      "newUsers": 364
+      "sessions": 425,
+      "totalUsers": 345,
+      "newUsers": 353
     },
     {
       "sessionCampaignName": "manage_reviews_",
-      "sessions": 25,
-      "totalUsers": 24,
+      "sessions": 23,
+      "totalUsers": 22,
       "newUsers": 0
     },
     {
@@ -4486,9 +4474,9 @@
     },
     {
       "sessionCampaignName": "navigation",
-      "sessions": 25,
-      "totalUsers": 20,
-      "newUsers": 19
+      "sessions": 26,
+      "totalUsers": 21,
+      "newUsers": 20
     },
     {
       "sessionCampaignName": "news",
@@ -4716,9 +4704,9 @@
   "traffic_by_keyword": [
     {
       "sessionGoogleAdsKeyword": "(not set)",
-      "sessions": 29879,
-      "totalUsers": 23001,
-      "newUsers": 25012
+      "sessions": 30040,
+      "totalUsers": 22990,
+      "newUsers": 25039
     },
     {
       "sessionGoogleAdsKeyword": "add live chat to shopify",
@@ -4746,8 +4734,8 @@
     },
     {
       "sessionGoogleAdsKeyword": "best loyalty apps for shopify",
-      "sessions": 51,
-      "totalUsers": 39,
+      "sessions": 50,
+      "totalUsers": 38,
       "newUsers": 37
     },
     {
@@ -4812,9 +4800,9 @@
     },
     {
       "sessionGoogleAdsKeyword": "loyalty program shopify",
-      "sessions": 66,
-      "totalUsers": 48,
-      "newUsers": 48
+      "sessions": 63,
+      "totalUsers": 46,
+      "newUsers": 46
     },
     {
       "sessionGoogleAdsKeyword": "loyalty program shopify app",
@@ -4830,15 +4818,15 @@
     },
     {
       "sessionGoogleAdsKeyword": "shopify app",
-      "sessions": 11,
-      "totalUsers": 10,
-      "newUsers": 10
+      "sessions": 12,
+      "totalUsers": 11,
+      "newUsers": 11
     },
     {
       "sessionGoogleAdsKeyword": "shopify app store",
-      "sessions": 73,
-      "totalUsers": 58,
-      "newUsers": 61
+      "sessions": 77,
+      "totalUsers": 60,
+      "newUsers": 64
     },
     {
       "sessionGoogleAdsKeyword": "shopify bogo app",
@@ -4890,9 +4878,9 @@
     },
     {
       "sessionGoogleAdsKeyword": "shopify loyalty points app",
-      "sessions": 16,
-      "totalUsers": 12,
-      "newUsers": 14
+      "sessions": 15,
+      "totalUsers": 11,
+      "newUsers": 13
     },
     {
       "sessionGoogleAdsKeyword": "shopify loyalty program",
@@ -4902,9 +4890,9 @@
     },
     {
       "sessionGoogleAdsKeyword": "shopify loyalty program apps",
-      "sessions": 933,
-      "totalUsers": 781,
-      "newUsers": 827
+      "sessions": 913,
+      "totalUsers": 764,
+      "newUsers": 810
     },
     {
       "sessionGoogleAdsKeyword": "shopify loyalty program free",
@@ -4926,9 +4914,9 @@
     },
     {
       "sessionGoogleAdsKeyword": "shopify rewards apps",
-      "sessions": 15,
-      "totalUsers": 11,
-      "newUsers": 12
+      "sessions": 14,
+      "totalUsers": 10,
+      "newUsers": 11
     },
     {
       "sessionGoogleAdsKeyword": "shopify rewards program",
@@ -4961,9 +4949,9 @@
       "sessionManualMedium": "(not set)",
       "sessionManualCampaignName": "(not set)",
       "sessionManualTerm": "(not set)",
-      "sessions": 10156,
-      "totalUsers": 7581,
-      "newUsers": 8307
+      "sessions": 10189,
+      "totalUsers": 7597,
+      "newUsers": 8324
     },
     {
       "sessionManualSource": "(not set)",
@@ -6896,27 +6884,27 @@
       "sessionManualMedium": "cpa",
       "sessionManualCampaignName": "joy_homepage",
       "sessionManualTerm": "button_hero",
-      "sessions": 264,
+      "sessions": 266,
       "totalUsers": 177,
-      "newUsers": 199
+      "newUsers": 200
     },
     {
       "sessionManualSource": "1303400-impact",
       "sessionManualMedium": "cpa",
       "sessionManualCampaignName": "joy_pricing",
       "sessionManualTerm": "(not set)",
-      "sessions": 80,
+      "sessions": 82,
       "totalUsers": 47,
-      "newUsers": 54
+      "newUsers": 55
     },
     {
       "sessionManualSource": "1303400-impact",
       "sessionManualMedium": "cpa",
       "sessionManualCampaignName": "(not set)",
       "sessionManualTerm": "(not set)",
-      "sessions": 26,
-      "totalUsers": 19,
-      "newUsers": 17
+      "sessions": 27,
+      "totalUsers": 20,
+      "newUsers": 18
     },
     {
       "sessionManualSource": "1303400-impact",
@@ -6941,8 +6929,8 @@
       "sessionManualMedium": "cpa",
       "sessionManualCampaignName": "bundle_demostore",
       "sessionManualTerm": "(not set)",
-      "sessions": 9,
-      "totalUsers": 7,
+      "sessions": 8,
+      "totalUsers": 6,
       "newUsers": 4
     },
     {
@@ -6975,6 +6963,15 @@
     {
       "sessionManualSource": "1303400-impact",
       "sessionManualMedium": "cpa",
+      "sessionManualCampaignName": "blogpost",
+      "sessionManualTerm": "(not set)",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2
+    },
+    {
+      "sessionManualSource": "1303400-impact",
+      "sessionManualMedium": "cpa",
       "sessionManualCampaignName": "_home",
       "sessionManualTerm": "(not set)",
       "sessions": 1,
@@ -6986,15 +6983,6 @@
       "sessionManualMedium": "cpa",
       "sessionManualCampaignName": "banner",
       "sessionManualTerm": "get_ecommerce_chat",
-      "sessions": 1,
-      "totalUsers": 1,
-      "newUsers": 1
-    },
-    {
-      "sessionManualSource": "1303400-impact",
-      "sessionManualMedium": "cpa",
-      "sessionManualCampaignName": "blogpost",
-      "sessionManualTerm": "(not set)",
       "sessions": 1,
       "totalUsers": 1,
       "newUsers": 1
@@ -20567,9 +20555,9 @@
       "sessionManualMedium": "banner",
       "sessionManualCampaignName": "landingpage",
       "sessionManualTerm": "partnership",
-      "sessions": 105,
-      "totalUsers": 78,
-      "newUsers": 84
+      "sessions": 102,
+      "totalUsers": 76,
+      "newUsers": 82
     },
     {
       "sessionManualSource": "Joy",
@@ -22216,7 +22204,7 @@
       "sessionManualTerm": "(not set)",
       "sessions": 97,
       "totalUsers": 70,
-      "newUsers": 62
+      "newUsers": 61
     },
     {
       "sessionManualSource": "admin",
@@ -22232,9 +22220,9 @@
       "sessionManualMedium": "(not set)",
       "sessionManualCampaignName": "admin-search",
       "sessionManualTerm": "(not set)",
-      "sessions": 42,
-      "totalUsers": 34,
-      "newUsers": 26
+      "sessions": 44,
+      "totalUsers": 35,
+      "newUsers": 28
     },
     {
       "sessionManualSource": "ae2ffd09bbd54bd7829af49f26c03505.safeframe.googlesyndication.com",
@@ -22313,18 +22301,18 @@
       "sessionManualMedium": "card",
       "sessionManualCampaignName": "dashboard",
       "sessionManualTerm": "(not set)",
-      "sessions": 247,
-      "totalUsers": 198,
-      "newUsers": 218
+      "sessions": 248,
+      "totalUsers": 199,
+      "newUsers": 219
     },
     {
       "sessionManualSource": "aeo",
       "sessionManualMedium": "banner",
       "sessionManualCampaignName": "dashboard",
       "sessionManualTerm": "(not set)",
-      "sessions": 115,
-      "totalUsers": 88,
-      "newUsers": 98
+      "sessions": 113,
+      "totalUsers": 87,
+      "newUsers": 96
     },
     {
       "sessionManualSource": "af02bd5adb55e037a3854c0bf0da7be5.safeframe.googlesyndication.com",
@@ -22439,27 +22427,27 @@
       "sessionManualMedium": "banner",
       "sessionManualCampaignName": "manage_reviews",
       "sessionManualTerm": "(not set)",
-      "sessions": 439,
-      "totalUsers": 355,
-      "newUsers": 364
+      "sessions": 425,
+      "totalUsers": 345,
+      "newUsers": 353
     },
     {
       "sessionManualSource": "air",
       "sessionManualMedium": "card_button",
       "sessionManualCampaignName": "collect reviews",
       "sessionManualTerm": "(not set)",
-      "sessions": 127,
-      "totalUsers": 110,
-      "newUsers": 110
+      "sessions": 131,
+      "totalUsers": 113,
+      "newUsers": 114
     },
     {
       "sessionManualSource": "air",
       "sessionManualMedium": "card_button",
       "sessionManualCampaignName": "integrations_install",
       "sessionManualTerm": "(not set)",
-      "sessions": 41,
-      "totalUsers": 32,
-      "newUsers": 36
+      "sessions": 42,
+      "totalUsers": 33,
+      "newUsers": 37
     },
     {
       "sessionManualSource": "air",
@@ -22491,10 +22479,19 @@
     {
       "sessionManualSource": "air",
       "sessionManualMedium": "banner_",
+      "sessionManualCampaignName": "manage memberships",
+      "sessionManualTerm": "(not set)",
+      "sessions": 23,
+      "totalUsers": 14,
+      "newUsers": 7
+    },
+    {
+      "sessionManualSource": "air",
+      "sessionManualMedium": "banner_",
       "sessionManualCampaignName": "manage_reviews_",
       "sessionManualTerm": "(not set)",
-      "sessions": 25,
-      "totalUsers": 24,
+      "sessions": 23,
+      "totalUsers": 22,
       "newUsers": 0
     },
     {
@@ -22502,18 +22499,9 @@
       "sessionManualMedium": "banner",
       "sessionManualCampaignName": "dashboard",
       "sessionManualTerm": "(not set)",
-      "sessions": 23,
-      "totalUsers": 23,
+      "sessions": 22,
+      "totalUsers": 22,
       "newUsers": 1
-    },
-    {
-      "sessionManualSource": "air",
-      "sessionManualMedium": "banner_",
-      "sessionManualCampaignName": "manage memberships",
-      "sessionManualTerm": "(not set)",
-      "sessions": 23,
-      "totalUsers": 14,
-      "newUsers": 7
     },
     {
       "sessionManualSource": "air",
@@ -22817,8 +22805,8 @@
       "sessionManualMedium": "referral",
       "sessionManualCampaignName": "(referral)",
       "sessionManualTerm": "(not set)",
-      "sessions": 52,
-      "totalUsers": 33,
+      "sessions": 54,
+      "totalUsers": 35,
       "newUsers": 37
     },
     {
@@ -23033,9 +23021,9 @@
       "sessionManualMedium": "web_button",
       "sessionManualCampaignName": "homepage",
       "sessionManualTerm": "(not set)",
-      "sessions": 39,
+      "sessions": 40,
       "totalUsers": 32,
-      "newUsers": 23
+      "newUsers": 24
     },
     {
       "sessionManualSource": "avada",
@@ -24536,7 +24524,7 @@
       "sessionManualMedium": "5type",
       "sessionManualCampaignName": "(referral)",
       "sessionManualTerm": "(not set)",
-      "sessions": 2,
+      "sessions": 3,
       "totalUsers": 2,
       "newUsers": 2
     },
@@ -24761,9 +24749,9 @@
       "sessionManualMedium": "organic",
       "sessionManualCampaignName": "(organic)",
       "sessionManualTerm": "(not provided)",
-      "sessions": 14,
-      "totalUsers": 8,
-      "newUsers": 10
+      "sessions": 16,
+      "totalUsers": 9,
+      "newUsers": 11
     },
     {
       "sessionManualSource": "bit.ly",
@@ -26885,9 +26873,9 @@
       "sessionManualMedium": "referral",
       "sessionManualCampaignName": "(referral)",
       "sessionManualTerm": "(not set)",
-      "sessions": 83,
-      "totalUsers": 43,
-      "newUsers": 61
+      "sessions": 81,
+      "totalUsers": 42,
+      "newUsers": 60
     },
     {
       "sessionManualSource": "chatgpt.com",
@@ -26903,9 +26891,9 @@
       "sessionManualMedium": "banner",
       "sessionManualCampaignName": "dashboard",
       "sessionManualTerm": "(not set)",
-      "sessions": 110,
-      "totalUsers": 63,
-      "newUsers": 94
+      "sessions": 104,
+      "totalUsers": 58,
+      "newUsers": 90
     },
     {
       "sessionManualSource": "chatty",
@@ -26933,6 +26921,15 @@
       "sessions": 3,
       "totalUsers": 3,
       "newUsers": 1
+    },
+    {
+      "sessionManualSource": "chatty",
+      "sessionManualMedium": "web_button",
+      "sessionManualCampaignName": "integrations_",
+      "sessionManualTerm": "(not set)",
+      "sessions": 3,
+      "totalUsers": 1,
+      "newUsers": 2
     },
     {
       "sessionManualSource": "chatty",
@@ -27041,15 +27038,6 @@
       "sessions": 1,
       "totalUsers": 1,
       "newUsers": 0
-    },
-    {
-      "sessionManualSource": "chatty",
-      "sessionManualMedium": "web_button",
-      "sessionManualCampaignName": "integrations_",
-      "sessionManualTerm": "(not set)",
-      "sessions": 1,
-      "totalUsers": 1,
-      "newUsers": 1
     },
     {
       "sessionManualSource": "chatty",
@@ -33365,27 +33353,27 @@
       "sessionManualMedium": "organic",
       "sessionManualCampaignName": "(organic)",
       "sessionManualTerm": "(not provided)",
-      "sessions": 1692,
-      "totalUsers": 986,
-      "newUsers": 1143
+      "sessions": 1707,
+      "totalUsers": 995,
+      "newUsers": 1153
     },
     {
       "sessionManualSource": "google",
       "sessionManualMedium": "adwords",
       "sessionManualCampaignName": "Search. JOY_Loyalty rewards program",
       "sessionManualTerm": "(not provided)",
-      "sessions": 1282,
-      "totalUsers": 1029,
-      "newUsers": 1101
+      "sessions": 1258,
+      "totalUsers": 1010,
+      "newUsers": 1082
     },
     {
       "sessionManualSource": "google",
       "sessionManualMedium": "adwords",
       "sessionManualCampaignName": "Search. JOY_Loyalty rewards program",
       "sessionManualTerm": "(not set)",
-      "sessions": 46,
-      "totalUsers": 38,
-      "newUsers": 37
+      "sessions": 44,
+      "totalUsers": 36,
+      "newUsers": 35
     },
     {
       "sessionManualSource": "google",
@@ -33851,9 +33839,18 @@
       "sessionManualMedium": "userguide_",
       "sessionManualCampaignName": "navigation",
       "sessionManualTerm": "(not set)",
+      "sessions": 22,
+      "totalUsers": 18,
+      "newUsers": 19
+    },
+    {
+      "sessionManualSource": "joy",
+      "sessionManualMedium": "banner_",
+      "sessionManualCampaignName": "customer_Block_crossapp",
+      "sessionManualTerm": "(not set)",
       "sessions": 21,
-      "totalUsers": 17,
-      "newUsers": 18
+      "totalUsers": 4,
+      "newUsers": 10
     },
     {
       "sessionManualSource": "joy",
@@ -33863,15 +33860,6 @@
       "sessions": 20,
       "totalUsers": 2,
       "newUsers": 2
-    },
-    {
-      "sessionManualSource": "joy",
-      "sessionManualMedium": "banner_",
-      "sessionManualCampaignName": "customer_Block_crossapp",
-      "sessionManualTerm": "(not set)",
-      "sessions": 18,
-      "totalUsers": 4,
-      "newUsers": 7
     },
     {
       "sessionManualSource": "joy",
@@ -34103,9 +34091,9 @@
       "sessionManualMedium": "partnership",
       "sessionManualCampaignName": "(not set)",
       "sessionManualTerm": "(not set)",
-      "sessions": 68,
-      "totalUsers": 44,
-      "newUsers": 56
+      "sessions": 69,
+      "totalUsers": 45,
+      "newUsers": 57
     },
     {
       "sessionManualSource": "judge.me",
@@ -34328,8 +34316,8 @@
       "sessionManualMedium": "referral",
       "sessionManualCampaignName": "(referral)",
       "sessionManualTerm": "(not set)",
-      "sessions": 8,
-      "totalUsers": 2,
+      "sessions": 9,
+      "totalUsers": 3,
       "newUsers": 6
     },
     {
@@ -34436,9 +34424,9 @@
       "sessionManualMedium": "referral",
       "sessionManualCampaignName": "(referral)",
       "sessionManualTerm": "(not set)",
-      "sessions": 5,
-      "totalUsers": 3,
-      "newUsers": 4
+      "sessions": 7,
+      "totalUsers": 4,
+      "newUsers": 5
     },
     {
       "sessionManualSource": "manualdanet.com",
@@ -34922,7 +34910,7 @@
       "sessionManualMedium": "referral",
       "sessionManualCampaignName": "(referral)",
       "sessionManualTerm": "(not set)",
-      "sessions": 17,
+      "sessions": 18,
       "totalUsers": 1,
       "newUsers": 6
     },
@@ -35687,9 +35675,9 @@
       "sessionManualMedium": "banner",
       "sessionManualCampaignName": "dashboard",
       "sessionManualTerm": "(not set)",
-      "sessions": 31,
-      "totalUsers": 24,
-      "newUsers": 26
+      "sessions": 30,
+      "totalUsers": 23,
+      "newUsers": 25
     },
     {
       "sessionManualSource": "seaaccessibility",
@@ -35813,9 +35801,9 @@
       "sessionManualMedium": "homepage",
       "sessionManualCampaignName": "(referral)",
       "sessionManualTerm": "free_to_install",
-      "sessions": 32,
+      "sessions": 31,
       "totalUsers": 28,
-      "newUsers": 15
+      "newUsers": 14
     },
     {
       "sessionManualSource": "seo",
@@ -35885,9 +35873,9 @@
       "sessionManualMedium": "card",
       "sessionManualCampaignName": "dashboard",
       "sessionManualTerm": "(not set)",
-      "sessions": 590,
-      "totalUsers": 479,
-      "newUsers": 511
+      "sessions": 592,
+      "totalUsers": 481,
+      "newUsers": 512
     },
     {
       "sessionManualSource": "seosuite",
@@ -35966,26 +35954,26 @@
       "sessionManualMedium": "card_button",
       "sessionManualCampaignName": "homepage_",
       "sessionManualTerm": "(not set)",
-      "sessions": 4,
-      "totalUsers": 4,
-      "newUsers": 4
+      "sessions": 3,
+      "totalUsers": 3,
+      "newUsers": 3
     },
     {
       "sessionManualSource": "shopify",
       "sessionManualMedium": "(not set)",
       "sessionManualCampaignName": "admin-search",
       "sessionManualTerm": "(not set)",
-      "sessions": 806,
-      "totalUsers": 434,
-      "newUsers": 614
+      "sessions": 815,
+      "totalUsers": 436,
+      "newUsers": 619
     },
     {
       "sessionManualSource": "shopify",
       "sessionManualMedium": "(not set)",
       "sessionManualCampaignName": "app-card-1c76cf8a2c51f2fcf7a52ae3db9b0d6f",
       "sessionManualTerm": "(not set)",
-      "sessions": 207,
-      "totalUsers": 124,
+      "sessions": 206,
+      "totalUsers": 123,
       "newUsers": 156
     },
     {
@@ -35993,9 +35981,9 @@
       "sessionManualMedium": "(not set)",
       "sessionManualCampaignName": "installed",
       "sessionManualTerm": "(not set)",
-      "sessions": 99,
-      "totalUsers": 63,
-      "newUsers": 69
+      "sessions": 102,
+      "totalUsers": 64,
+      "newUsers": 70
     },
     {
       "sessionManualSource": "shopify",
@@ -36112,15 +36100,6 @@
       "sessionManualTerm": "(not set)",
       "sessions": 2,
       "totalUsers": 2,
-      "newUsers": 1
-    },
-    {
-      "sessionManualSource": "shopify",
-      "sessionManualMedium": "(not set)",
-      "sessionManualCampaignName": "app-card-c66b561f5bb42d1dca07b6d236a27278",
-      "sessionManualTerm": "(not set)",
-      "sessions": 2,
-      "totalUsers": 1,
       "newUsers": 1
     },
     {
@@ -37046,9 +37025,9 @@
       "sessionManualMedium": "seo_blog",
       "sessionManualCampaignName": "free-loyalty-programs-for-small-businesses",
       "sessionManualTerm": "(not set)",
-      "sessions": 96,
-      "totalUsers": 81,
-      "newUsers": 84
+      "sessions": 97,
+      "totalUsers": 82,
+      "newUsers": 85
     },
     {
       "sessionManualSource": "web_joy",
@@ -37439,91 +37418,6 @@
     }
   ],
   "traffic_daily_by_source": [
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "(direct) / (none)",
-      "sessions": 70
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "google / cpc",
-      "sessions": 28
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "air / banner",
-      "sessions": 15
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "google / organic",
-      "sessions": 7
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "shopify / (not set)",
-      "sessions": 7
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "chatty / banner",
-      "sessions": 6
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "Gokwik / banner",
-      "sessions": 3
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "(not set)",
-      "sessions": 2
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "aeo / banner",
-      "sessions": 2
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "air / banner_",
-      "sessions": 2
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "chatgpt.com / referral",
-      "sessions": 2
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "1303400-impact / cpa",
-      "sessions": 1
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "admin / (not set)",
-      "sessions": 1
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "judge.me / partnership",
-      "sessions": 1
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "seaaccessibility / banner",
-      "sessions": 1
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "seo / homepage",
-      "sessions": 1
-    },
-    {
-      "date": "20251220",
-      "sessionSourceMedium": "sherpas / card_button",
-      "sessions": 1
-    },
     {
       "date": "20251221",
       "sessionSourceMedium": "(direct) / (none)",
@@ -48588,194 +48482,124 @@
       "date": "20260319",
       "sessionSourceMedium": "shopvid / card_button",
       "sessions": 1
-    }
-  ],
-  "traffic_daily_by_country": [
-    {
-      "date": "20251220",
-      "country": "United States",
-      "sessions": 23
     },
     {
-      "date": "20251220",
-      "country": "India",
+      "date": "20260320",
+      "sessionSourceMedium": "(direct) / (none)",
+      "sessions": 95
+    },
+    {
+      "date": "20260320",
+      "sessionSourceMedium": "google / organic",
       "sessions": 20
     },
     {
-      "date": "20251220",
-      "country": "Canada",
+      "date": "20260320",
+      "sessionSourceMedium": "shopify / (not set)",
       "sessions": 15
     },
     {
-      "date": "20251220",
-      "country": "China",
-      "sessions": 14
-    },
-    {
-      "date": "20251220",
-      "country": "Pakistan",
-      "sessions": 13
-    },
-    {
-      "date": "20251220",
-      "country": "Singapore",
+      "date": "20260320",
+      "sessionSourceMedium": "1303400-impact / cpa",
       "sessions": 6
     },
     {
-      "date": "20251220",
-      "country": "T\u00fcrkiye",
-      "sessions": 6
-    },
-    {
-      "date": "20251220",
-      "country": "Argentina",
+      "date": "20260320",
+      "sessionSourceMedium": "air / card_button",
       "sessions": 5
     },
     {
-      "date": "20251220",
-      "country": "Spain",
+      "date": "20260320",
+      "sessionSourceMedium": "google / cpc",
       "sessions": 5
     },
     {
-      "date": "20251220",
-      "country": "Australia",
+      "date": "20260320",
+      "sessionSourceMedium": "joy / banner_",
       "sessions": 3
     },
     {
-      "date": "20251220",
-      "country": "France",
-      "sessions": 3
-    },
-    {
-      "date": "20251220",
-      "country": "Sweden",
-      "sessions": 3
-    },
-    {
-      "date": "20251220",
-      "country": "Bahrain",
+      "date": "20260320",
+      "sessionSourceMedium": "(not set)",
       "sessions": 2
     },
     {
-      "date": "20251220",
-      "country": "Brazil",
+      "date": "20260320",
+      "sessionSourceMedium": "admin-mobile-app / (not set)",
       "sessions": 2
     },
     {
-      "date": "20251220",
-      "country": "Chile",
+      "date": "20260320",
+      "sessionSourceMedium": "app.airreviews.io / referral",
       "sessions": 2
     },
     {
-      "date": "20251220",
-      "country": "Egypt",
+      "date": "20260320",
+      "sessionSourceMedium": "bing / organic",
       "sessions": 2
     },
     {
-      "date": "20251220",
-      "country": "Malaysia",
+      "date": "20260320",
+      "sessionSourceMedium": "chatty / web_button",
       "sessions": 2
     },
     {
-      "date": "20251220",
-      "country": "Mexico",
+      "date": "20260320",
+      "sessionSourceMedium": "judge.me / partnership",
       "sessions": 2
     },
     {
-      "date": "20251220",
-      "country": "Netherlands",
+      "date": "20260320",
+      "sessionSourceMedium": "mail.google.com / referral",
       "sessions": 2
     },
     {
-      "date": "20251220",
-      "country": "Romania",
+      "date": "20260320",
+      "sessionSourceMedium": "seosuite / card",
       "sessions": 2
     },
     {
-      "date": "20251220",
-      "country": "South Africa",
-      "sessions": 2
-    },
-    {
-      "date": "20251220",
-      "country": "United Kingdom",
-      "sessions": 2
-    },
-    {
-      "date": "20251220",
-      "country": "Vietnam",
-      "sessions": 2
-    },
-    {
-      "date": "20251220",
-      "country": "Algeria",
+      "date": "20260320",
+      "sessionSourceMedium": "admin / (not set)",
       "sessions": 1
     },
     {
-      "date": "20251220",
-      "country": "Austria",
+      "date": "20260320",
+      "sessionSourceMedium": "aeo / card",
       "sessions": 1
     },
     {
-      "date": "20251220",
-      "country": "Belgium",
+      "date": "20260320",
+      "sessionSourceMedium": "avada / web_button",
       "sessions": 1
     },
     {
-      "date": "20251220",
-      "country": "Finland",
+      "date": "20260320",
+      "sessionSourceMedium": "bd_tab / 5type",
       "sessions": 1
     },
     {
-      "date": "20251220",
-      "country": "Germany",
+      "date": "20260320",
+      "sessionSourceMedium": "joy / userguide_",
       "sessions": 1
     },
     {
-      "date": "20251220",
-      "country": "Hungary",
+      "date": "20260320",
+      "sessionSourceMedium": "linkedin.com / referral",
       "sessions": 1
     },
     {
-      "date": "20251220",
-      "country": "Morocco",
+      "date": "20260320",
+      "sessionSourceMedium": "okapya.atlassian.net / referral",
       "sessions": 1
     },
     {
-      "date": "20251220",
-      "country": "New Zealand",
+      "date": "20260320",
+      "sessionSourceMedium": "web_joy / seo_blog",
       "sessions": 1
-    },
-    {
-      "date": "20251220",
-      "country": "Nicaragua",
-      "sessions": 1
-    },
-    {
-      "date": "20251220",
-      "country": "Poland",
-      "sessions": 1
-    },
-    {
-      "date": "20251220",
-      "country": "Qatar",
-      "sessions": 1
-    },
-    {
-      "date": "20251220",
-      "country": "Switzerland",
-      "sessions": 1
-    },
-    {
-      "date": "20251220",
-      "country": "United Arab Emirates",
-      "sessions": 1
-    },
-    {
-      "date": "20251220",
-      "country": "Venezuela",
-      "sessions": 1
-    },
+    }
+  ],
+  "traffic_daily_by_country": [
     {
       "date": "20251221",
       "country": "United States",
@@ -67640,13 +67464,224 @@
       "date": "20260319",
       "country": "Western Sahara",
       "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "United States",
+      "sessions": 26
+    },
+    {
+      "date": "20260320",
+      "country": "India",
+      "sessions": 20
+    },
+    {
+      "date": "20260320",
+      "country": "Singapore",
+      "sessions": 18
+    },
+    {
+      "date": "20260320",
+      "country": "Vietnam",
+      "sessions": 16
+    },
+    {
+      "date": "20260320",
+      "country": "Canada",
+      "sessions": 12
+    },
+    {
+      "date": "20260320",
+      "country": "Mexico",
+      "sessions": 12
+    },
+    {
+      "date": "20260320",
+      "country": "United Kingdom",
+      "sessions": 8
+    },
+    {
+      "date": "20260320",
+      "country": "Germany",
+      "sessions": 4
+    },
+    {
+      "date": "20260320",
+      "country": "Taiwan",
+      "sessions": 4
+    },
+    {
+      "date": "20260320",
+      "country": "Australia",
+      "sessions": 3
+    },
+    {
+      "date": "20260320",
+      "country": "Brazil",
+      "sessions": 3
+    },
+    {
+      "date": "20260320",
+      "country": "France",
+      "sessions": 3
+    },
+    {
+      "date": "20260320",
+      "country": "Italy",
+      "sessions": 3
+    },
+    {
+      "date": "20260320",
+      "country": "South Africa",
+      "sessions": 3
+    },
+    {
+      "date": "20260320",
+      "country": "China",
+      "sessions": 2
+    },
+    {
+      "date": "20260320",
+      "country": "Colombia",
+      "sessions": 2
+    },
+    {
+      "date": "20260320",
+      "country": "Guadeloupe",
+      "sessions": 2
+    },
+    {
+      "date": "20260320",
+      "country": "Martinique",
+      "sessions": 2
+    },
+    {
+      "date": "20260320",
+      "country": "Pakistan",
+      "sessions": 2
+    },
+    {
+      "date": "20260320",
+      "country": "Paraguay",
+      "sessions": 2
+    },
+    {
+      "date": "20260320",
+      "country": "Poland",
+      "sessions": 2
+    },
+    {
+      "date": "20260320",
+      "country": "Sweden",
+      "sessions": 2
+    },
+    {
+      "date": "20260320",
+      "country": "Uganda",
+      "sessions": 2
+    },
+    {
+      "date": "20260320",
+      "country": "Bangladesh",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Belgium",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Bulgaria",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Cambodia",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Costa Rica",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Cyprus",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Denmark",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Egypt",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Greece",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Japan",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Lithuania",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Nepal",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Netherlands",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Nigeria",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Philippines",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Portugal",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Qatar",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Spain",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Trinidad & Tobago",
+      "sessions": 1
+    },
+    {
+      "date": "20260320",
+      "country": "Ukraine",
+      "sessions": 1
     }
   ],
   "installs_daily": [
-    {
-      "date": "20251220",
-      "keyEvents:shopify_app_install": 7
-    },
     {
       "date": "20251221",
       "keyEvents:shopify_app_install": 14
@@ -68002,13 +68037,13 @@
     {
       "date": "20260319",
       "keyEvents:shopify_app_install": 21
+    },
+    {
+      "date": "20260320",
+      "keyEvents:shopify_app_install": 13
     }
   ],
   "installs_daily_prev": [
-    {
-      "date": "20250921",
-      "keyEvents:shopify_app_install": 24
-    },
     {
       "date": "20250922",
       "keyEvents:shopify_app_install": 32
@@ -68364,12 +68399,16 @@
     {
       "date": "20251219",
       "keyEvents:shopify_app_install": 20
+    },
+    {
+      "date": "20251220",
+      "keyEvents:shopify_app_install": 7
     }
   ],
   "installs_by_source": [
     {
       "firstUserSourceMedium": "(direct) / (none)",
-      "keyEvents:shopify_app_install": 1128
+      "keyEvents:shopify_app_install": 1134
     },
     {
       "firstUserSourceMedium": "1303400-impact / cpa",
@@ -68401,7 +68440,7 @@
     },
     {
       "firstUserSourceMedium": "admin-mobile-app / (not set)",
-      "keyEvents:shopify_app_install": 7
+      "keyEvents:shopify_app_install": 8
     },
     {
       "firstUserSourceMedium": "aeo / banner",
@@ -68413,7 +68452,7 @@
     },
     {
       "firstUserSourceMedium": "air / banner",
-      "keyEvents:shopify_app_install": 13
+      "keyEvents:shopify_app_install": 12
     },
     {
       "firstUserSourceMedium": "air / banner_",
@@ -68505,7 +68544,7 @@
     },
     {
       "firstUserSourceMedium": "google / organic",
-      "keyEvents:shopify_app_install": 41
+      "keyEvents:shopify_app_install": 40
     },
     {
       "firstUserSourceMedium": "joy / (not set)",
@@ -68605,7 +68644,7 @@
     },
     {
       "firstUserSourceMedium": "shopify / (not set)",
-      "keyEvents:shopify_app_install": 192
+      "keyEvents:shopify_app_install": 193
     },
     {
       "firstUserSourceMedium": "shopvid / card_button",
@@ -68635,7 +68674,7 @@
     },
     {
       "country": "Algeria",
-      "keyEvents:shopify_app_install": 2
+      "keyEvents:shopify_app_install": 1
     },
     {
       "country": "Argentina",
@@ -68643,7 +68682,7 @@
     },
     {
       "country": "Australia",
-      "keyEvents:shopify_app_install": 63
+      "keyEvents:shopify_app_install": 64
     },
     {
       "country": "Austria",
@@ -68699,7 +68738,7 @@
     },
     {
       "country": "Costa Rica",
-      "keyEvents:shopify_app_install": 1
+      "keyEvents:shopify_app_install": 2
     },
     {
       "country": "Cyprus",
@@ -68727,7 +68766,7 @@
     },
     {
       "country": "Egypt",
-      "keyEvents:shopify_app_install": 20
+      "keyEvents:shopify_app_install": 21
     },
     {
       "country": "El Salvador",
@@ -68755,7 +68794,7 @@
     },
     {
       "country": "Germany",
-      "keyEvents:shopify_app_install": 38
+      "keyEvents:shopify_app_install": 39
     },
     {
       "country": "Ghana",
@@ -68791,7 +68830,7 @@
     },
     {
       "country": "India",
-      "keyEvents:shopify_app_install": 158
+      "keyEvents:shopify_app_install": 157
     },
     {
       "country": "Indonesia",
@@ -68855,7 +68894,7 @@
     },
     {
       "country": "Mexico",
-      "keyEvents:shopify_app_install": 29
+      "keyEvents:shopify_app_install": 31
     },
     {
       "country": "Moldova",
@@ -68895,7 +68934,7 @@
     },
     {
       "country": "Pakistan",
-      "keyEvents:shopify_app_install": 54
+      "keyEvents:shopify_app_install": 55
     },
     {
       "country": "Panama",
@@ -68911,7 +68950,7 @@
     },
     {
       "country": "Philippines",
-      "keyEvents:shopify_app_install": 15
+      "keyEvents:shopify_app_install": 16
     },
     {
       "country": "Poland",
@@ -68986,12 +69025,20 @@
       "keyEvents:shopify_app_install": 11
     },
     {
+      "country": "Trinidad & Tobago",
+      "keyEvents:shopify_app_install": 1
+    },
+    {
       "country": "Tunisia",
       "keyEvents:shopify_app_install": 1
     },
     {
       "country": "T\u00fcrkiye",
       "keyEvents:shopify_app_install": 16
+    },
+    {
+      "country": "Uganda",
+      "keyEvents:shopify_app_install": 1
     },
     {
       "country": "Ukraine",
@@ -69003,11 +69050,11 @@
     },
     {
       "country": "United Kingdom",
-      "keyEvents:shopify_app_install": 50
+      "keyEvents:shopify_app_install": 49
     },
     {
       "country": "United States",
-      "keyEvents:shopify_app_install": 378
+      "keyEvents:shopify_app_install": 377
     },
     {
       "country": "Uruguay",
